@@ -1,0 +1,563 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html, body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #2b2b2b;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 2.7em;
+  color: #8b5b6e;
+  font-family: 'Dancing Script', cursive;
+}
+a {
+  text-decoration: none;
+  color: #8b5b6e;
+}
+p {
+  margin: 20px;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/***** HEADER *****/
+header {
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 2em;
+  color: #8b5b6e;
+  font-family: 'Dancing Script', cursive;
+  height: 60px;
+  background-color: #ffe7e3;
+}
+.half-width-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: nowrap;
+  width: 80%;
+}
+.half-width-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: nowrap;
+  width: 20%;
+}
+.line {
+  width: 25px;
+  height: 2px;
+  margin: 6px 0;
+  background: #8b5b6e;
+  margin-right: 20px;
+}
+.hamburger .nav-links {
+    display: none;
+}
+.hamburger:hover {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 98%;
+  margin: 0 auto;
+  background-color: #8b5b6e;
+}
+.hamburger:hover .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    margin: 0 auto;
+    padding-right: 0 auto;
+}
+.hamburger:hover .nav-links li {
+  padding-right: 30px;
+  padding-bottom: 60px;
+}
+.hamburger:hover .nav-links li a {
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+}
+.nav-links {
+    list-style: none;
+    display: none;
+}
+.nav-links li a {
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/***** INTRODUCTION *****/
+#introduction h1 {
+  font-size: 3.4em;
+  line-height: 1.1em;
+  margin: 40px;
+}
+#introduction p {
+  font-size: 1.4em;
+}
+/***** WORK *****/
+/* 
+  * Note work section from here out refers to clients
+  * Sections, ID's and Div's remain consistant from home page 
+*/
+#work-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+}
+#work-container .box {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100px;
+  padding: 10px;
+  margin: 10px 0;
+}
+#work-container .box {
+  background-color: rgba(125, 162, 126, .5);
+}
+#work-container .box:hover {
+  background-color: rgba(125, 162, 126, 1);
+}
+
+#work-container .box a {
+  text-decoration: none;
+}
+#work-container .box h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  color: white;
+  margin: 0 20px;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 615px) {
+/* ==========================================================================
+  * Switches work section to horizontal view
+  * Increases font size of introduction section
+  * Increases margin of introduction section
+=========================================================================== */
+  /****** GRID STYLES *****/
+  .half-width {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .third-width {
+    width: 33.3%;
+  }
+  /***** INTRO *****/
+  #introduction h1 {
+    margin: 50px 50px;
+  }
+  #introduction p {
+    margin: 50px 100px;
+  }
+  /***** WORK *****/
+  #work-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+  }
+  #work-container .box {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 120px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+/* ==========================================================================
+  * Adjusts size of header content and menu lines
+  * Increases font size of introduction
+=========================================================================== */
+  /***** HEADER ****/
+  header {
+    height: 100px;
+    font-size: 2.5em;
+  }
+  nav {
+    font-size: 1em;
+  }
+  .line {
+    width: 35px;
+    margin: 8px 20px;
+  }
+  /***** INTRO *****/
+  #introduction h1 {
+    font-size: 4em;
+  }
+}
+@media only screen and (min-width: 826px) {
+  /***** WORK *****/
+  #work-container .box {
+    width: 30%;
+    padding: 10px 40px;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+/* ==========================================================================
+  * Increases font size
+  * Adjusts width of client boxes
+=========================================================================== */
+  /***** INTRO *****/
+  #introduction h1 {
+    font-size: 4.3em;
+  }
+  p {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 1060px) {
+  /*
+      Adjusts margins
+      Increases font sizes
+      p is for "Kaitlyn Marino" header and #introduction p is content
+  */
+      /***** BASE STYLES *****/
+      #introduction {
+          margin-bottom: 30px;
+      }
+      #introduction p {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          width: 70%;
+      }
+      .full-width h1 {
+          font-size: 2.5em;
+      }
+      p {
+          font-size: 1.5em;
+      }
+      /***** HEADER *****/
+      .line {
+        display: none;
+      }
+      .half-width-left {
+        width: 45%;
+      }
+      .half-width-right {
+        width: 55%;
+      }
+      .nav-links {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-flow: row wrap;
+      }
+      .hamburger ul {
+        display: none;
+      }
+      ul {
+        display: flex;
+        list-style-type: none;
+        font-size: .7em;
+      }
+      li {
+        padding: 10px 25px;
+      }
+      li:hover {
+        background-color: white;
+        opacity: 70%;
+      }
+      /***** WORK *****/
+      #work-container .box {
+        width: 23%;
+        height: 175px;
+        padding: 10px 3px;
+        margin: 0 auto;
+      }
+}
+
+@media only screen and (min-width: 1170px) {
+/* ==========================================================================
+  * Adds horizontal menu navigation items
+  * Adjusts header width area to fit menu navigation menu items
+=========================================================================== */ 
+  /***** WORK *****/
+  #work-container {
+    width: 90%;
+  }
+  #work-container .box {
+    width: 20%;
+    padding: 10px;
+    margin: 0 auto;
+  }
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+

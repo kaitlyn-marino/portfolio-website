@@ -1,134 +1,612 @@
-/***** BASE STYLES *****/
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #2b2b2b;
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html, body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #2b2b2b;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: #8b5b6e;
+  font-size: 1.5em;
+}
+h1 {
+  color: #8b5b6e;
+  font-size: 3.2em;
+  font-family: 'Dancing Script', cursive;
+}
+p {
+  font-size: 1em;
 }
 
-/***** GRID *****/
-.full-width {
-    width: 1200px;
-    margin: 0 auto;
-    overflow: auto;
-}
-.half-width {
-    width: 600px;
-    float: left;
-}
-.third-width {
-    width: 400px;
-    float: left;
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
 /***** HEADER *****/
 header {
-    height: 750px;
-    background: url("../img/sparkle-background.jpg");
-    background-size: cover;
-    background-position: 50% 18%;
-    
+  background: url("../img/sparkle-background.jpg");
+  background-size: 185%;
+  background-repeat: no-repeat;
+  background-color: #ffe7e3;
+  width: 100%;  
 }
 header h1 {
-    font-family: 'Dancing Script', cursive;
-    font-weight: 400;
-    font-size: 130px;
-    color: #8b5b6e;
-    text-align: center;
-    margin: 30px;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+  font-size: 7rem;
+  color: #8b5b6e;
+  text-align: center;
 }
-
-header .boxes {
-    padding-top: 285px;
+/***** WORK *****/
+#work-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-header .first {
-    float: left;
-    padding: 0 50px 0 20px;
-    width: 230px;
-    height: 360px;
-    background-color: #7da27e;
-    opacity: 50%;
-    margin-right: 80px;
-    margin-left: 80px;
+#work-container .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 85%;
+  margin: 20px 0;
+  padding: 0 20px;
 }
-header .second {
-    float: left;
-    padding: 0 50px 0 20px;
-    width: 230px;
-    height: 360px;
-    background-color: #8b5b6e;
-    opacity: 80%;
-    margin-right: 80px;
+#work-container .box #one {
+  background-color: #7da27e;
+  opacity: 50%;
 }
-header .third {
-    float: left;
-    padding: 0 50px 0 20px;
-    width: 230px;
-    height: 360px;
-    background-color: #95a7b6;
-    opacity: 80%;
-    margin-right: 60px;
+#work-container .box #one:hover {
+  opacity: 100%;
 }
-header h2 {
-    font-family: 'Dancing Script', cursive;
-    font-weight: 600;
-    font-size: 46px;
-    color: white;
-    padding-left: 25px;
+#work-container .box #two {
+  background-color: #8b5b6e;
+  opacity: 50%;
+}
+#work-container .box #two:hover {
+  opacity: 100%;
+}
+#work-container .box #three {
+  background-color: #95a7b6;
+  opacity: 50%;
+}
+#work-container .box #three:hover {
+  opacity: 100%;
+}
+#work-container .box a {
+  text-decoration: none;
+}
+#work-container .box h2 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 600;
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 0;
 } 
-header p {
-    font-size: 19px;
-    color: white;
-    padding-left: 25px;
+#work-container .box p {
+  font-size: 1.5rem;
+  color: white;
 }
 /***** ABOUT *****/
-#about .full-width {
-    padding: 150px 150px 80px 150px;
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  background-color: white;
+  margin: 0 auto;
+  padding-bottom: 60px;
 }
-#about h2  {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 36px;
-    padding-left: 50px;
-    color: #8b5b6e;
+#about h1 {
+  font-size: 3.4em;
 }
 #about p {
-    font-size: 21px;
-    color: #7f7f7f;
-    line-height: 40px;
-    padding-left: 50px;
-    padding-right: 100px;
+  font-size: 1.3em;
+  text-align: left;
+}
+/***** FOOTER *****/
+#contact-container {
+  background-color: #ffe7e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  width: 100%;
+}
+#contact-container h1 {
+  color: #8b5b6e;
+  padding: 0 40px;
+  font-size: 3.4em;
+}
+.button {
+  border: none;
+  font-size: 1.875rem;
+  text-align: center;
+  background-color: #7da27e;
+  opacity: 50%;
+  margin-top: 6%;
+  width: 60%;
+}
+.button a {
+  text-decoration: none;
+  color: white;
+}
+.button:hover {
+  opacity: 100%;
+}
+.copyright {
+  margin: 60px 0 20px;
+}
+.copyright p {
+  font-size: 1em;
+}
+.contact {
+  display: none;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
 }
 
-/***** CONTACT *****/
-#contact {
-    background-color: #ffe7e3;
-}
-#contact .full-width {
-    padding: 20px;
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
 }
 
-#contact h1 {
-    font-familY: 'Source Sans Pro', sans-serif;
-    font-size: 50px;
-    color: #8b5b6e;
-    padding-right: 120px;
-    padding-left: 80px;
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
 }
-#contact .button {
-    background-color: #7da27e;
-    opacity: 80%;
-    text-align: center;
-    height: 50px;
-    width: 470px;
-    margin-left: 80px;
-    margin-top: 40px;
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
 }
-#contact .button p {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 30px;
-    text-align: center;
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
 }
-#contact .button p a {
-    text-decoration: none;
-    color: white;
-    line-height: 50px;
-    
+
+.clearfix::after {
+  clear: both;
 }
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 700px) {
+/*===============================================================================
+  * Switches work section to horizontal view of boxes using flex box
+  * Increase font sizes
+  * Overlay effect of work boxes with opacity
+  * Adds icons to footer
+============================================================================== */
+  /***** BASE STYLES *****/
+  .half-width {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .third-width {
+    width: 33.3%;
+  }
+  h1 {
+    font-size: 3.7em;
+  }
+  p {
+    font-size: 1.3em;
+  }
+  /***** HEADER *****/
+  header {
+    background-size: 120%;
+    background-position: 40% 0%;
+    margin: 0 auto;
+    background-color: white;
+  }
+  header h1{
+    padding: 0 5%;
+  }
+  /***** WORK *****/
+  #work-container {
+    padding-bottom: 30px;
+  }
+  #work-container .box {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-flow: row nowrap;
+    margin: 0 15px;
+    flex: 1;
+  }
+  #work-container .box h2 {
+    font-size: 2.6rem;
+  }
+  #work-container .box p {
+    font-size: 1.25rem;
+  }
+  #work-container .box #one {
+    opacity: 70%;
+  }
+  #work-container .box #two {
+    opacity: 70%;
+  }
+  #work-container .box #three {
+    opacity: 70%;
+  }
+  /***** FOOTER *****/
+  .buttons {
+    display: none;
+  }
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 80%;
+    margin-top: 30px;
+  }
+  .third-width {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    width: 33.3%;
+    margin: 0 auto;
+    line-height: 1em;
+  }
+  .third-width img {
+    opacity: 50%;
+    width: 70px;
+  }
+}
+
+@media only screen and (min-width: 685px) {
+/*===============================================================================
+  * Switches hero-image to adjust for sizing
+============================================================================== */
+  /***** HEADER *****/
+  header {
+    background-image: url("../img/sparkle-background-tablet.jpg");
+  }
+
+}
+@media only screen and (min-width: 853px) {
+  header {
+    background-size: cover;
+    height: 450px;
+    margin-bottom: 200px;
+  }
+}
+
+@media only screen and (min-width: 977px) {
+/*===============================================================================
+  * Increases font size
+  * Adds margin to work h1 boxes to keep formatting consistent with the start of 
+    the next paragraph
+============================================================================== */
+  /***** BASE STYLES *****/
+  html, body {
+    font-size: 20px;
+  }
+  header h1 {
+    padding: 0 5% 8%;
+  }
+  header {
+    height: 700px;
+    margin-bottom: 300px;
+  }
+  /***** WORK *****/
+  #work-container .box h2 {
+    font-size: 1.7em;
+  }
+  #work-container .box p {
+    font-size: .9em;
+  }
+  #work-container .box #one h2 {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  #work-container .box #three h2 {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  /***** ABOUT *****/
+  #about h1 {
+    font-size: 4em;
+  }
+  /***** FOOTER *****/
+  #contact-container h1 {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+/*===============================================================================
+  * Switches hero-image to new image to re-adjust sizing
+  * Increase font sizes
+  * Defines width of work boxes to keep consistant
+============================================================================== */
+  /***** HEADER *****/
+  header {
+    background-image: url("../img/sparkle-background-desktop.jpg");
+  }
+  /***** WORK *****/
+  #work-container .box {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-flow: row nowrap;
+    width: 750px;
+  }
+  #work-container .box h2 {
+    font-size: 2em;
+  }
+  #work-container .box p {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+/*===============================================================================
+  * Increases font sizes
+  * Adjusts work container width for fluid responsive design
+============================================================================== */
+  /***** HEADER *****/
+  header h1 {
+      font-size: 8em;
+  }
+  /***** WORK *****/
+  #work-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1630px) {
+/*===============================================================================
+  * Adjusts work container width for fluid responsive design
+============================================================================== */
+  /***** WORK *****/
+  #work-container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1782px) {
+/*===============================================================================
+  * Increases font-sizes
+============================================================================== */
+  /***** WORK *****/
+  #work-container .box h2 {
+    font-size: 2.7em;
+  }
+  #work-container .box p {
+    font-size: 1.5em;
+  }
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+

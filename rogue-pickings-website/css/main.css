@@ -1,0 +1,131 @@
+/***** BODY *****/
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+/***** GRID *****/
+.full-width{
+    width: 1200px;
+    float: left;
+    overflow: auto;
+}
+.half-width {
+    width: 600px;
+    float: left;
+}
+.third-width{
+    width: 400px;
+    float: left;
+}
+
+/***** HEADER *****/
+img {
+    border: 3px solid #77a466;
+    width: 1200px;
+}
+header h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 23px;
+    color: #000000;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+header h1 span {
+    color: #77a466;
+}
+nav {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-top: 8px;
+}
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: #77a466;
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/***** ABOUT *****/
+#about h2 {
+    font-size: 18px;
+    line-height: 23px;
+    color: #77a466;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#about p {
+    line-height: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+/***** CALL-OUTS *****/
+#call-outs .third-width {
+    border-top: 1px solid #dedbdc;
+    border-right: 1px solid #dedbdc;
+    border-bottom: 1px solid #dedbdc;
+    height: 200px;
+    width: 399px;
+    float: left;
+}
+#call-outs #contact {
+    border-right: none;
+}
+#call-outs h3 {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: 400px;
+}
+#reviews h3, #contact h3, #reviews p, #contact p {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#call-outs ul {
+    margin: 0;
+    padding: 0;
+}
+#call-outs ul li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+    line-height: 18px;
+    color: #77a466;
+    font-weight: 400;
+    margin: 22px 0;
+}
+#call-outs p {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+}
+#call-outs p span {
+    line-height: 24px;
+}
+
+/***** FOOTER *****/
+footer h2 {
+    text-align: center;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+footer h2 span {
+    text-transform: none;
+    color: #77a466;
+    font-family: 'Galada', cursive;
+}
+
+/****** MARGINS ******/
+#about, #call-outs, header, footer {
+    margin: 30px 120px 50px;
+}

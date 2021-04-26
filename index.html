@@ -1,68 +1,123 @@
 <!doctype html>
-<html lang="en">
-    
+<html class="no-js" lang="">
+
 <head>
-    <meta charset="utf-8">
-    <title>Kaitlyn Marino | Portfolio</title>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="css/main.css">
-        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header> <!---HEADER SECTION INCLUDING WORK-->
-            <div class="full-width">
-                <h1>Kaitlyn Marino</h1>
-            </div>
-                <div class="full-width">
-                    <div class="boxes">
-                        <div class="first">
+  <meta charset="utf-8">
+  <title>Kaitlyn Marino | Portfolio</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <header> <!---HERO AREA-->
+        <div class="hero-container">
+            <h1>Kaitlyn Marino</h1>
+            <section id="work-container"> <!--BEGIN WORK SECTION; KEEP INCLUDED IN HEADER FOR OVERLAY EFFECT-->
+                <div class="box">
+                    <div class="box" id="one"> <!--ID'S ARE NEEDED TO COLOR EACH BOX-->
+                        <a href="./elegant-code/index.html">
                             <h2>Elegant Code</h2>
-                            <p>I pride myself on writing elegant, clean clode for fast collaboration, trouble-shooting, and ease of updating.</p>
-                         </div>
-                        <div class="second">
-                            <h2>Responsive Design</h2>
-                            <p>Ease converting designs into live websites through HTML & CSS that are responsive for mobile, desktop and Ipad.</p>
-                        </div>
-                        <div class="third">
+                            <p>I pride myself on writing elegant, clean code with comments for troubleshooting and ease of future updates</p>
+                        </a>
+                    </div>
+                    <div class="box" id="two">
+                        <a href="./clients/index.html">
+                            <h2>Clients & Websites</h2>
+                            <p>Ease creating mock-ups & converting to live, responsive websites through clean HTML code, stylized CSS, Flexbox and JavaScript</p>
+                        </a>
+                    </div>
+                    <div class="box" id="three">
+                        <a href="https://www.kaitlynmarino.com" target="_blank">
                             <h2>Graphic Design</h2>
-                            <p>As a previous graphic designer, I enjoy building the design of new web pages and working with clients to perfect the overall look.</p>
-                        </div>
+                            <p>Three years of professional graphic design experience including logo creation, branding, print and web designs, and more</p>
+                        </a>
                     </div>
                 </div>
-        </header>
-        <main>
-            <section id="about"> <!--ABOUT SECTION-->
-                <div class="full-width">
-                    <h2>A litte bit about me.</h2>
-                    <div class="half-width">
-                        <p>My journey started in the city as a graphic designer for three years. 
-                            Life takes you by surprise and I ended up moving 
-                            to a small town in North Carolina where life is more simple. 
-                            Getting out of the city opened my eyes and helped me find my passion, web development. 
-                            </p>
-                    </div>
-                    <div class="half-width">
-                        <p>You see, when I was a graphic designer I was thrown into the web and was learning as I went.
-                            I was intrigued by the way web pages were built and loved the thrill of mastering a challenging code.
-                            Here I am today, designing websites using clean code and responsive design. 
-                        </p>
-                    </div>
+            </section> 
+        </div>
+    </header>
+    <main>
+        <section id="about"><!--ABOUT ME SECTION-->
+            <div class="about-content">
+                <h1>About Me</h1>
+                <p>Welcome! I am so glad you are here with me today. I am thrilled to have the opportunity to share my love of web development with you.</p>
+                <p>As a front end developer, I pride myself on writing elegant, clean code with comments to ensure optimal efficiency. I am passionate about stylizing front end components with CSS and implementing fluid, responsive design.</p>
+                <p>My specialty lies in converting PSD files to live, functional websites meeting all requirements outlined in the mock-ups. My previous professional experience in graphic design has guided me into web design and UX design. My personal goal for every client is to deliver an exceptional web experience for each of their customers while implementing best practices and the latest standards and trends.</p>
+                <p>I am always intrigued by a new challenge and enjoy seeing my skillset continually grow. Take a look around and get in touch!</p>
+            </div>
+        </section>
+    </main>
+    <footer id="contact-container"><!--CONTACT SECTION IS THE FOOTER; DOES NOT USE FOOTER ACROSS ALL PAGES-->
+        <div class="contact-intro">
+            <h1>Get In Touch and Stay Connected!</h1>
+        </div>
+        <div class="buttons">
+            <button class="button">
+                <a href="mailto:kaitlyn.a.marino@gmail.com">Email</a>
+            </button>
+            <button class="button">
+                <a href="https://www.linkedin.com/in/kaitlyn-marino-graphic-designer/" target="_blank">LinkedIn</a>
+            </button>
+            <button class="button">
+                <a href="https://github.com/kaitlyn-marino" target="_blank">GitHub</a>
+            </button>
+         </div>
+         <div class="contact">
+            <div class="third-width">
+                <a href="mailto:kaitlyn.a.marino@gmail.com">
+                    <img src="img/email.png" alt="Email Icon">
+                    <p>Email</p>
+                </a>
+            </div>
+            <div class="third-width">
+                <a href="https://www.linkedin.com/in/kaitlyn-marino-graphic-designer/" target="_blank">
+                    <img src="img/linkedin.png" alt="LinkedIn Icon">
+                    <p>LinkedIn</p>
+                </a>
+            </div>
+            <div class="third-width">
+                <div class="third-width">
+                    <a href="https://github.com/kaitlyn-marino" target="_blank">
+                        <img src="img/github.png" alt="Github Icon">
+                        <p>GitHub</p>
+                    </a>
                 </div>
-            </section>
-            <footer id="contact"><!--CONTACT SECTION-->
-                <div class="full-width">
-                    <div class="half-width">
-                        <h1>Are you ready? Hire me today. Let's get building!</h1>
-                    </div>
-                    <div class="half-width">
-                        <div class="button">
-                            <p> <a href="mailto:kaitlyn.a.marino@gmail.com">Email Me</a></p>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </main>
-    </body>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2021 | Kaitlyn Marino</p>
+        </div>
+    </footer>
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
 </html>

@@ -1,0 +1,28 @@
+#coming-soon .page-name {
+  color: #91A391;
+  font-size: 2.5em;
+  line-height: 2.7em;
+}
+#coming-soon .message {
+  font-size: 1.5em;
+}
+
+
+@media only screen and (min-width: 1080px) {
+  header p {
+    line-height: 1.1em;
+  }
+  .nav-links li {
+    margin: 0 40px 10px 0;
+  }
+  #coming-soon .page-name {
+    font-size: 3.5em;
+  }
+  #coming-soon .message {
+    font-size: 2.5em;
+  }
+  #coming-soon {
+    margin-bottom: 50px;
+  }
+}
+

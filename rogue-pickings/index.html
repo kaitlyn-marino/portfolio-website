@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kaitlyn Marino | Portfolio</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+        <SCRIPT>
+            function ShowAndHide() {
+                var x = document.getElementById('highlights');
+                if (x.style.display == 'none') {
+                    x.style.display = 'flex';
+                } else {
+                    x.style.display = 'none';
+                }
+            }
+        </SCRIPT>
+
+</head>
+<body>
+    <header> <!---HERO AREA-->
+        <div class="half-width-left">
+            <a href="../index.html">
+                <p>Kaitlyn Marino</p>
+            </a>
+        </div>
+        <div class="half-width-right">
+            <nav>
+                <a href="#" class="mobile-nav">
+                    <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <ul class="nav-links">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../elegant-code/index.html">Code</a></li>
+                            <li><a href="../clients/index.html">Clients</a></li>
+                            <li><a href="https://kaitlynmarino.com" target="_blank">Graphic Design</a></li>
+                        </ul>
+                    </div>
+                </a>
+                <ul class="nav-links">
+                    <a href="../index.html"><li>Home</li></a>
+                    <a href="../elegant-code/index.html"><li>Code</li></a>
+                    <a href="../clients/index.html"><li>Clients</li></a>
+                    <a href="https://kaitlynmarino.com" target="_blank"><li>Graphic Design</li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+            
+        </div>
+        <div class="full-width">
+            <h1>Rogue Pickings</h1>
+        </div>
+        <section id="introduction"> <!--BEGIN INTRO SECTION-->
+            <p>The client provided a PSD mock-up file for the website design and requested a static home page (non-responsive). I built the webpage using HTML and CSS, implementing clean code and commenting for easy future updates and troubleshooting.</p>
+        </section>
+        <section id="on-click-buttons">
+            <a href="http://codingbykaitlyn.com/rogue-pickings-website" target="_blank"><button>Website</button></a>
+            <BUTTON ONCLICK="ShowAndHide()">Highlights</BUTTON>
+        </section>
+
+        <section id="highlights" STYLE="display:none"> <!--BEGIN DISPLAY SECTION-->
+            <div class="two-column">
+                <div class="first-half">
+                    <p><b>PSD Conversion:</b> Built the webpage using HTML and CSS to match the PSD file provided. Images were extracted, sized accordingly, and saved using file naming convention best practices.</p>
+                </div>
+                <div class="second-half">
+                    <img src="./img/psd.jpg" width="90%" alt="Photoshop File for Conversion">
+                </div>
+            </div>
+
+            <div class="two-column">
+                <div class="first-half">
+                    <p><b>Display: Inline-Block:</b> Implemented a three column layout using CSS inline-block properties. Using the inline-block property and floating the elements properly, I was able to match the exact layout provided in the mock-up.</p>
+                </div>
+                <div class="second-half">
+                    <img src="./img/sections.jpg" width="90%" alt="Three Column Section">
+                </div>
+            </div>
+
+            <div class="two-column">
+                <div class="first-half">
+                    <p><b>Horizontal Navigation Menu:</b> Properly aligned the menu navigation items horizontally to mimick the mock-up file. Exact spacing between menu items were added by using the ruler feature in Photoshop and stylizing the CSS.</p>
+                </div>
+                <div class="second-half">
+                    <img src="./img/nav.jpg" width="90%" alt="Navigation Menu">
+                </div>
+            </div>
+
+            <div class="two-column">
+                <div class="first-half">
+                    <p><b>Stylized Content:</b> Used div classes and span tags in the HTML file to allow for easy and clean CSS style updates. This in turn allowed for different fonts and font sizing within the same line of text.</p>
+                </div>
+                <div class="second-half">
+                    <img src="./img/footer.jpg" width="90%" alt="Stylized Content">
+                </div>
+            </div>
+
+        </section> 
+    </main>
+</body>
+</html>

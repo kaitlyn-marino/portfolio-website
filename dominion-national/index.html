@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kaitlyn Marino | Portfolio</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <SCRIPT>
+            function ShowAndHide() {
+                var x = document.getElementById('highlights');
+                if (x.style.display == 'none') {
+                    x.style.display = 'flex';
+                } else {
+                    x.style.display = 'none';
+                }
+            }
+        </SCRIPT>
+
+</head>
+<body>
+    <header> <!---HERO AREA-->
+        <div class="half-width-left">
+            <a href="../index.html">
+                <p>Kaitlyn Marino</p>
+            </a>
+        </div>
+        <div class="half-width-right">
+            <nav>
+                <a href="#" class="mobile-nav">
+                    <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <ul class="nav-links">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../elegant-code/index.html">Code</a></li>
+                            <li><a href="../clients/index.html">Clients</a></li>
+                            <li><a href="https://kaitlynmarino.com" target="_blank">Graphic Design</a></li>
+                        </ul>
+                    </div>
+                </a>
+                <ul class="nav-links">
+                    <a href="../index.html"><li>Home</li></a>
+                    <a href="../elegant-code/index.html"><li>Code</li></a>
+                    <a href="../clients/index.html"><li>Clients</li></a>
+                    <a href="https://kaitlynmarino.com" target="_blank"><li>Graphic Design</li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="full-width">
+            <img src="img/banner.png" alt="Banner Image">
+            <h1>Dominion National</h1>
+        </div>
+        <section id="introduction"> <!--BEGIN INTRO SECTION-->
+            <p>The project goal was to create a more user friendly website and implement responsive design. Specific features were flagged for updating as they were not functional in the live environment. For example, the navigation menu was disappearing and the user was unable to navigate to any of those pages. The design did not utilize the full width of the page and when resized to fit mobile or tablet, the text and design elements were not wrapping correctly, therefore getting cut off.</p>
+            <p>All content remained the same and was only modified in the event of a user experience design change. Branding rules and style guides were followed to complete the design process.</p>
+            <p>I designed mock-ups of the new webpages and layouts, created working prototypes of the mobile friendly version to use as the base for coding, coded the HTML and stylized the CSS, and added fluid responsive design.</p>
+            <p>Please note only a handful of pages were updated at this time. Please refer to the following pages: Home, Dental, Vision, Find a Dentist, Find a Vision Provider, Members, Dentists, and Groups. </p>
+        </section> 
+
+        <section id="on-click-buttons">
+            <a href="https://www.dominionnational.com/" target="_blank"><button>Original Website</button></a>
+            <a href="http://codingbykaitlyn.com/dominion-national-website/" target="_blank"><button>Re-Designed Website</button></a>
+            <a href="#on-click-buttons"><BUTTON ONCLICK="ShowAndHide()">Website Highlights</BUTTON></a>
+        </section>
+
+        <section id="highlights" STYLE="display:none"> <!--BEGIN DISPLAY SECTION-->
+            <div class="two-column">
+                <div class="first-half">
+                    <p><b>Responsive Design:</b> Transitioned the design to be responsive and functional across all platforms. The original site lost functionality and re-positioned content out of order when viewed on mobile or tablet platforms.</p>
+                </div>
+                <div class="second-half">
+                    <img src="./img/home-page.jpg" width="100%" alt="Home Page">
+                </div>
+            </div>
+
+            <div class="yellow-line"></div>
+
+            <div class="two-column">
+                <div class="first-half">
+                    <p><b>Menu Navigation:</b> Added a hamburger-style menu navigation to the mobile and tablet versions. When viewing the original site on these platforms, there was no way to navigate to the menu item pages.</p>
+                </div>
+                <div class="second-half">
+                    <img src="./img/menu-navigation.png" width="100%" alt="Menu Navigation">
+                </div>
+            </div>
+
+            <div class="yellow-line"></div>
+
+            <div class="two-column">
+                <div class="first-half">
+                    <p><b>Dropdown Items:</b> There were multiple sets of dropdown items under the original navigation making it difficult for the user to navigate to each page. The design was updated to decrease the number of dropdown items and visually allow the user to click through the pages.</p>
+                </div>
+                <div class="second-half">
+                    <img src="./img/drop-down-items.png" width="100%" alt="Dropdown Items">
+                </div>
+            </div>
+
+            <div class="yellow-line"></div>
+
+            <div class="two-column">
+                <div class="first-half">
+                    <p><b>Footer Links:</b> Updated the footer links to be more user friendly and include responsive design. The new footer allows for easier navigation and less space as the items in the footer are of less importance to the page.</p>
+                </div>
+                <div class="second-half">
+                    <img src="./img/footer.png" width="100%" alt="Footer Links">
+                </div>
+            </div>
+
+            <div class="yellow-line"></div>
+
+            <div class="two-column">
+                <div class="first-half">
+                    <p><b>Buttons & Click-Throughs:</b> Added buttons for user click-through items. By adding buttons the user functions available on the page become more clear and allow the useer to continue moving through the website easier and quicker. Buttons were stylized with hover commands on the desktop version so the user can quickly identify when they are positioned over the button. Telephone references were added to phone numbers for call links to populate.</p>
+                </div>
+                <div class="second-half">
+                    <img src="./img/click-through.png" width="100%" alt="Buttons & Click-Throughs">
+                </div>
+            </div>
+
+        </section> 
+    </main>
+</body>
+</html>

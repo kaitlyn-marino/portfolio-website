@@ -1,0 +1,280 @@
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+main {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin: 0 auto;
+  flex-flow: column wrap;
+  width: 100%;
+}
+.header p a {
+  text-decoration: underline;
+  color: #00558c;
+}
+
+/***** ABOUT *****/
+#about {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}  
+#about h1 {
+  font-size: 1.6em;
+  margin: 20px;
+  color: #00558c;
+  text-align: center;
+  padding-top: 20px;
+}
+#about h2 {
+  font-size: 1.2em;
+  margin: 0 30px 10px;
+  color: #00558c;
+  text-align: center;
+}
+
+/***** BLOCK *****/
+.block-one, .block-two, .block-three, .block-four, .block-five, .block-six {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+.header h3 {
+  font-size: 1.4em;
+  display: flex;
+}
+.image-width {
+  width: 25%;
+}
+.header-width {
+  width: 75%;
+}
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 30px 40px 0 40px;
+  width: 100%;
+  padding: 15px 0;
+}
+.header p {
+  font-size: 1em;
+  text-align: left;
+  padding-bottom: 10px;
+}
+.yellow-line {
+  width: 80%;
+  background-color: #f7ce3e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 2px;
+}
+.header img {
+  height: 65px;
+  padding: 10px 20px 20px 0;
+  align-items: left;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid #05588c 1px;
+  margin: 20px 20px 20px 0;
+  width: 230px;
+  background-color: white;
+  padding: 0;
+}
+.button p {
+  padding: 0 15px;
+}
+.button a {
+  text-decoration: none;
+  color: #05588c;
+}
+.button:hover {
+  background-color: #05588c;
+  border: solid #05588c 1px;
+  color: white;
+}
+.button:hover p {
+  color: white;
+}
+#call-out {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin: 0 auto;
+  border: dotted #82bd01 2px;
+  border-top: none;
+  width: 80%;
+  margin-bottom: 60px;
+}
+#call-out h3 {
+  background-color: #82bd01;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: white;
+  font-size: 1.4em;
+}
+.button2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  background-color: white;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+@media only screen and (max-width: 339px) {
+  .button {
+    font-size: .9em;
+    width: 210px;
+  }
+}
+
+@media only screen and (min-width: 427px) {
+  main {
+    width: 100%;
+  }
+  #blocks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    width: 400px;
+  }
+  #call-out {
+    width: 325px;
+  }
+}
+
+@media only screen and (min-width: 615px) {
+  main {
+    width: 100%;
+  }
+  #about {
+    margin: 0 30px;
+  }
+  #blocks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    width: 500px;
+  }
+  .yellow-line {
+    width: 85%;
+  }
+  #call-out {
+    width: 425px;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+/* 
+Adjusts the about section width
+Adjusts widths of banner
+Adjusts widths of main-content
+*/
+
+  #blocks {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 40px;
+    padding-right: 20px;
+  }
+  .block-one, .block-two, .block-three, .block-four, .block-five, .block-six {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    width: 49.8%;
+    border-bottom: solid #f7ce3e 2px;
+  }
+  .block-five, .block-six {
+    border-bottom: none;
+    margin-bottom: 50px;
+  }
+  .yellow-line {
+    display: none;;
+  }
+ .block-one, .block-three, .block-five {
+   border-right: solid #f7ce3e 2px;
+ }
+ .block-one .header, .block-two .header {
+   padding-top: 0;
+   margin-top: 0;
+ }
+ #call-out {
+   width: 80%;
+ }
+ #call-out h3 {
+   font-size: 1.8em;
+ }
+
+  /***** ABOUT *****/ 
+  #about {
+    width: 90%;
+  }
+  #about h1 {
+    font-size: 1.8em;
+  }
+  #about h2 {
+    font-size: 1.3em;
+  }
+}
+    
+@media only screen and (min-width: 992px) {
+/* 
+Adjusts about section width and text size
+*/
+  #about h1 {
+    font-size: 2em;
+  }
+  #about h2 {
+    font-size: 1.5em;
+  }
+  .image-width {
+    width: 20%;
+  }
+  .header-width {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1198px) {
+/* 
+Adjusts about section width
+*/
+
+  #about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+  }
+}
