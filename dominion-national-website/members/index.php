@@ -50,7 +50,7 @@
           <p>Log in to our secure site and view and print plan documents, view claims information (including EOB’s), determine the cost of your next visit to the dentist with Dominion’s Cost Calculator, change dentists, print ID cards and update your contact information.</p>
         
           <div class="button">
-            <a href="https://www.dominionnational.com/wps/portal/dnd/login">
+            <a href="https://www.dominionmembers.com/" target="_blank">
               <p>Login</p>
             </a>
           </div>

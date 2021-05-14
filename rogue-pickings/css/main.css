@@ -225,7 +225,7 @@ p {
     }
     .two-column {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: flex-start;
         flex-flow: row wrap;
         margin: 0 auto;

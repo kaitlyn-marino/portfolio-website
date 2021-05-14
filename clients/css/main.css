@@ -21,6 +21,7 @@ html, body {
   flex-flow: row wrap;
   width: 100%;
   text-align: center;
+  margin: 0 auto;
 }
 h1 {
   font-size: 2.7em;
@@ -32,7 +33,7 @@ a {
   color: #8b5b6e;
 }
 p {
-  margin: 20px 20px; 
+  margin: 20px;
 }
 
 /*
@@ -113,10 +114,8 @@ header {
   font-size: 2em;
   color: #8b5b6e;
   font-family: 'Dancing Script', cursive;
-  height: 100px;
+  height: 60px;
   background-color: #ffe7e3;
-  margin: 0;
-  padding: 0;
 }
 .half-width-left {
   display: flex;
@@ -175,6 +174,7 @@ header {
 }
 .nav-links li a {
     text-decoration: none;
+    font-size: 1em;
 }
 
 /***** INTRODUCTION *****/
@@ -198,7 +198,6 @@ header {
   align-items: center;
   margin: 0 auto;
   width: 90%;
-  padding-bottom: 20px;
 }
 #work-container .box {
   display: flex;
@@ -364,7 +363,7 @@ header {
 =========================================================================== */
   /***** HEADER ****/
   header {
-    height: 130px;
+    height: 100px;
     font-size: 2.5em;
   }
   nav {
@@ -409,15 +408,15 @@ header {
   */
       /***** BASE STYLES *****/
       #introduction {
-        margin-bottom: 30px;
-    }
-    #introduction p {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        width: 70%;
-    }
+          margin-bottom: 30px;
+      }
+      #introduction p {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          width: 70%;
+      }
       .full-width h1 {
           font-size: 2.5em;
       }
@@ -458,7 +457,7 @@ header {
       /***** WORK *****/
       #work-container .box {
         width: 23%;
-        height: 175px;
+        height: 155px;
         padding: 10px 3px;
         margin: 0 auto;
       }

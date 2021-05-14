@@ -12,6 +12,15 @@
   line-height: 1.4em;
 }
 
+/***** LINKS *****/
+#links {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 10px 40px 10px;
+}
+
 /***** THIRD BOX *****/
 .third-box img {
   height: 80px;
@@ -72,6 +81,7 @@ Stacks link boxes 2 x 2
   /***** LINKS *****/ 
   #links {
     margin: 20px 130px 40px 130px;
+    flex-flow: row wrap;
   }
 }
 

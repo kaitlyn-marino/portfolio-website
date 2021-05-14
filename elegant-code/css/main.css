@@ -28,6 +28,11 @@ h1 {
   color: #8b5b6e;
   font-family: 'Dancing Script', cursive;
 }
+h2 {
+  font-size: 2em;
+  color: #8b5b6e;
+  font-weight: 200;
+}
 a {
   text-decoration: none;
   color: #8b5b6e;
@@ -182,49 +187,34 @@ header {
   font-size: 3.4em;
   line-height: 1.1em;
   margin: 40px;
+  padding-left: 20px;
 }
 #introduction p {
   font-size: 1.4em;
 }
-/***** WORK *****/
-/* 
-  * Note work section from here out refers to clients
-  * Sections, ID's and Div's remain consistant from home page 
-*/
-#work-container {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 90%;
+/****** SKILLS *****/
+ul li {
+  list-style: none;
+  padding-right: 30px;
 }
-#work-container .box {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-  height: 100px;
-  padding: 10px;
-  margin: 10px 0;
+/****** RESUME *****/
+#resume {
+  margin: 40px;
 }
-#work-container .box {
-  background-color: rgba(125, 162, 126, .5);
+button {
+  background-color: white;
+  color: #7da27e;
+  border: solid #7da27e 1px;
+  font-size: 1.2em;
+  margin: 20px;
+  padding: 7px 0;
+  outline: none;
+  width: 200px;
 }
-#work-container .box:hover {
-  background-color: rgba(125, 162, 126, 1);
-}
-
-#work-container .box a {
-  text-decoration: none;
-}
-#work-container .box h2 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
-  font-size: 2em;
+button:hover {
+  background-color: #7da27e;
   color: white;
-  margin: 0 20px;
+  border: solid #7da27e 1px;
 }
 /* ==========================================================================
    Helper classes
@@ -377,13 +367,17 @@ header {
   #introduction h1 {
     font-size: 4em;
   }
+  /***** SKILLS *****/
+  h2 {
+    font-size: 2.7em;
+  }
+  ul li {
+    font-size: 1.4em;
+  }
 }
 @media only screen and (min-width: 826px) {
   /***** WORK *****/
-  #work-container .box {
-    width: 30%;
-    padding: 10px 40px;
-  }
+  
 }
 
 @media only screen and (min-width: 950px) {
@@ -438,45 +432,19 @@ header {
         align-items: flex-end;
         justify-content: center;
         flex-flow: row wrap;
+        list-style-type: none;
+        font-size: .5em;
       }
       .hamburger ul {
         display: none;
       }
-      ul {
-        display: flex;
-        list-style-type: none;
-        font-size: .7em;
-      }
-      li {
+      .nav-links li {
         padding: 10px 25px;
       }
-      li:hover {
+      .nav-links li:hover {
         background-color: white;
         opacity: 70%;
       }
-      /***** WORK *****/
-      #work-container .box {
-        width: 23%;
-        height: 175px;
-        padding: 10px 3px;
-        margin: 0 auto;
-      }
-}
-
-@media only screen and (min-width: 1170px) {
-/* ==========================================================================
-  * Adds horizontal menu navigation items
-  * Adjusts header width area to fit menu navigation menu items
-=========================================================================== */ 
-  /***** WORK *****/
-  #work-container {
-    width: 90%;
-  }
-  #work-container .box {
-    width: 20%;
-    padding: 10px;
-    margin: 0 auto;
-  }
 }
 
 @media print,

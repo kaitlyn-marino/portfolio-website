@@ -179,7 +179,7 @@ header {
         align-items: center;
         justify-content: center;
         flex-flow: row wrap;
-        margin: 40px 0;
+        margin: 40px 100px;
     }
 }
 
@@ -209,6 +209,9 @@ header {
        flex-flow: column wrap;
        margin: 0 auto;
        width: 90%;
+    }
+    #on-click-buttons {
+        margin: 40px 200px;
     }
     .two-column {
         display: flex;
@@ -296,4 +299,10 @@ header {
     li a:hover {
         color: white;
     }
+}
+@media only screen and (min-width: 1210px) {
+
+#on-click-buttons {
+    margin: 40px 0;
+}
 }

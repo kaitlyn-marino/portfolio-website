@@ -16,6 +16,10 @@ a {
     text-decoration: none;
     color: #8b5b6e;
 }
+p {
+    margin: 20px;
+    font-size: 1em;
+}
 /***** HEADER *****/
 header {
     display: flex;
@@ -112,6 +116,7 @@ p {
 }
 #introduction p {
     font-size: 1.2em;
+    margin: 40px;
 }
 
 /****** ON CLICK BUTTONS *****/
@@ -148,12 +153,24 @@ p {
 #highlights {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-flow: row wrap;
+    margin: 0;
+    width: 90%;
+}
+.two-column {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-flow: column wrap;
     margin: 0 auto;
+    padding-bottom: 70px;
 }
 #highlights img {
-    margin-bottom: 40px;
+    margin-left: 40px;
+}
+.two-column p {
+    font-size: 1.2em;
 }
 
 
@@ -191,6 +208,26 @@ p {
     }
 }
 
+@media only screen and (min-width: 850px) {
+    #highlights {
+        padding: 60px 0;
+    }
+    .two-column {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-flow: row wrap;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .first-half {
+        width: 45%;
+    }
+    .second-half {
+        width: 55%;
+    }
+}
+
 
 @media only screen and (min-width: 1060px) {
 /*
@@ -210,7 +247,7 @@ p {
 
     /***** INTRODUCTION *****/
     #introduction p {
-        margin: 40px 30px;
+        margin: 40px 80px;
         font-size: 1.5em;
     }
 
@@ -220,10 +257,17 @@ p {
         width: 270px;
     }
 
-    /***** DISPLAY *****/
-    #highlights img {
-        margin-bottom: 120px;
+   /***** DISPLAY *****/
+   .two-column {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 0;
+        padding-bottom: 100px;
     }
+    .two-column p {
+        font-size: 1.5em;
+    }       
 }
 
 @media only screen and (min-width: 1170px) {
