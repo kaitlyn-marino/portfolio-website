@@ -16,101 +16,103 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+  <script src="js/vendor/modernizr-3.11.2.min.js" defer></script>
+  <script src="js/plugins.js" defer></script>
+  <script src="js/main.js" defer></script>
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-    <header> <!---HERO AREA-->
-        <div class="hero-container">
-            <h1>Kaitlyn Marino</h1>
-            <section id="work-container"> <!--BEGIN WORK SECTION; KEEP INCLUDED IN HEADER FOR OVERLAY EFFECT-->
-                <div class="box">
-                    <div class="box" id="one"> <!--ID'S ARE NEEDED TO COLOR EACH BOX-->
-                        <a href="./elegant-code/index.html">
-                            <h2>Skills & Resume</h2>
-                            <p>Take a deep dive into my development and tech skills and download a copy of my resume</p>
-                        </a>
-                    </div>
-                    <div class="box" id="two">
-                        <a href="./clients/index.html">
-                            <h2>Clients & Websites</h2>
-                            <p>Ease creating mock-ups & converting to live, responsive websites through clean HTML code, stylized CSS, Flexbox and JavaScript</p>
-                        </a>
-                    </div>
-                    <div class="box" id="three">
-                        <a href="https://www.kaitlynmarino.com" target="_blank">
-                            <h2>Graphic Design</h2>
-                            <p>Three years of professional graphic design experience including logo creation, branding, print and web designs, and more</p>
-                        </a>
-                    </div>
-                </div>
-            </section> 
-        </div>
-    </header>
-    <main>
-        <section id="about"><!--ABOUT ME SECTION-->
-            <div class="about-content">
-                <h1>About Me</h1>
-                <p>Welcome! I am so glad you are here with me today. I am thrilled to have the opportunity to share my love of web development with you.</p>
-                <p>As a front end developer, I pride myself on writing elegant, clean code with comments to ensure optimal efficiency. I am passionate about stylizing front end components with CSS and implementing fluid, responsive design.</p>
-                <p>My specialty lies in converting PSD files to live, functional websites meeting all requirements outlined in the mock-ups. My previous professional experience in graphic design has guided me into web design and UX design. My personal goal for every client is to deliver an exceptional web experience for each of their customers while implementing best practices and the latest standards and trends.</p>
-                <p>I am always intrigued by a new challenge and enjoy seeing my skillset continually grow. Take a look around and get in touch!</p>
-            </div>
-        </section>
-    </main>
-    <footer id="contact-container"><!--CONTACT SECTION IS THE FOOTER; DOES NOT USE FOOTER ACROSS ALL PAGES-->
-        <div class="contact-intro">
-            <h1>Get In Touch and Stay Connected!</h1>
-        </div>
-        <div class="buttons">
-            <button class="button">
-                <a href="mailto:kaitlyn.a.marino@gmail.com">Email</a>
-            </button>
-            <button class="button">
-                <a href="https://www.linkedin.com/in/kaitlyn-marino-graphic-designer/" target="_blank">LinkedIn</a>
-            </button>
-            <button class="button">
-                <a href="https://github.com/kaitlyn-marino" target="_blank">GitHub</a>
-            </button>
-         </div>
-         <div class="contact">
-            <div class="third-width">
-                <a href="mailto:kaitlyn.a.marino@gmail.com">
-                    <img src="img/email.png" alt="Email Icon">
-                    <p>Email</p>
-                </a>
-            </div>
-            <div class="third-width">
-                <a href="https://www.linkedin.com/in/kaitlyn-marino-graphic-designer/" target="_blank">
-                    <img src="img/linkedin.png" alt="LinkedIn Icon">
-                    <p>LinkedIn</p>
-                </a>
-            </div>
-            <div class="third-width">
-                <div class="third-width">
-                    <a href="https://github.com/kaitlyn-marino" target="_blank">
-                        <img src="img/github.png" alt="Github Icon">
-                        <p>GitHub</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>Copyright 2021 | Kaitlyn Marino</p>
-        </div>
-    </footer>
 
+<div class="hero-container">
+  <div class="navigation">
+    <div class="half-width">
+      <p class="title">Kaitlyn Marino</p>
+      <p class="menu">Menu</p>
+    </div>
+    <div class="half-width2">
+      <nav>
+        <a href="#technology-container"><li>Skills</li></a>
+        <a href="#about"><li>About</li></a>
+        <a href="#work"><li>Projects</li></a>
+        <a href="#contact"><li>Contact</li></a>
+      </nav>
+    </div>
+  </div>
+  <div class="hero-content">
+    <h1>Front End Developer</h1>
+    <h3>HTML, CSS, JavaScript, Responsive Design, Flexbox</h3>
+    <button class="takeAPeak">Take a Peak</button>
+  </div>
+</div>
 
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+<main>
+ 
+  <div class="technology-container" id="technology-container">
+    <h3>Developer Skills</h3>
+    <div class="tech-list">
+      <div class="circle"><p>HTML</p></div>
+      <div class="circle"><p>CSS</p></div>
+      <div class="circle"><p>JavaScript</p></div>
+      <div class="circle"><p>Responsive Design</p></div>
+      <div class="circle"><p>Flexbox</p></div>
+      <div class="circle"><p>GitHub</p></div>
+    </div>
+    <h3>Tech Stack</h3>
+    <div class="tech-list">
+      <div class="circle" id="vs-code"></div>
+      <div class="circle" id="photoshop"></div>
+      <div class="circle" id="xd"></div>
+      <div class="circle" id="illustrator"></div>
+      <div class="circle" id="indesign"></div>
+    </div>
+  </div>
+
+  <div class="about" id="about">
+    <h3>About Me</h3>
+    <p>Welcome! I am so glad you are here with me today. I am thrilled to have the opportunity to share my love of web development with you.</p>
+    <p>As a front end developer, I pride myself on writing elegant, clean code with comments to ensure optimal efficiency. I am passionate about stylizing front end components with CSS and implementing fluid, responsive design.</p>
+    <p>My specialty lies in converting PSD files to live, functional websites meeting all requirements outlined in the mock-ups. My previous professional experience in graphic design has guided me into web design and UX design.</p>
+    <p>My personal goal for every client is to deliver an exceptional web experience for each of their customers while implementing best practices and the latest standards and trends.</p>
+    <p>I am always intrigued by a new challenge and enjoy seeing my skillset continually grow. Take a look around and get in touch!</p>
+  </div>
+
+  <div class="work" id="work">
+    <h3>My Projects</h3>
+    <div class="work-container">
+      <div class="box" id="dominion"></div>
+      <div class="box" id="guess-the-word"></div>
+      <div class="box" id="github-gallery"></div>
+      <div class="box" id="we-do"></div>
+      <div class="box" id="unplugged"></div>
+      <div class="box"></div>
+    </div>
+  </div>
+
+  <div class="contact" id="contact">
+    <h3>Get In Contact & Stay Connected</h3>
+    <div class="tech-list">
+      <a href="mailto:kaitlyn.a.marino@gmail.com"><div class="circle" id="email"></div></a>
+      <a href="https://www.linkedin.com/in/kaitlyn-marino-developer/" target="_blank"><div class="circle" id="linkedin"></div></a>
+      <a href="https://github.com/kaitlyn-marino" target="_blank"><div class="circle" id="github"></div></a>
+    </div>
+    <div class="credits">
+      <p class="footer">Copyright 2021 | Kaitlyn Marino</p>
+      <p class="footer">Thanks Goran Ivos on Unsplash for photography</p>
+    </div>
+  </div>
+
+  
+</main>
+  
+  
+  
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

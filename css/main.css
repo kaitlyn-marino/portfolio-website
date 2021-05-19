@@ -10,30 +10,83 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-html, body {
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #2b2b2b;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: row wrap;
-  width: 100%;
+
+/* Base character/paragraph styles */
+html {
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-size: 18px;
+  line-height: 1.4;
   text-align: center;
+}
+h1 {
+  font-size: 3em;
+  margin: 10px 10px;
+  color: rgb(26, 26, 26);
+}
+h2 {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1em;
+  margin: 60px 30px 20px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1em;
+  margin: 20px 30px;
 }
 a {
   text-decoration: none;
-  color: #8b5b6e;
-  font-size: 1.5em;
+  color: black;
 }
-h1 {
-  color: #8b5b6e;
-  font-size: 3.2em;
-  font-family: 'Dancing Script', cursive;
+
+/* Universal Lists */
+ul {
+  list-style-type: none;
 }
-p {
-  font-size: 1em;
+
+/* Codes for JS */
+.hide {
+  display: none !important;
 }
+.color-darker {
+  background-color: black;
+}
+.color-purple {
+  background-color: rgb(15, 1, 15);
+}
+.project-overview {
+  color: white;
+  text-shadow: black;
+}
+.project-overview h2 {
+  font-size: 20px;
+}
+.project-overview p {
+  font-size: 16px;
+}
+
+/* Universal Buttons */
+button {
+  padding: 10px 20px;
+  border: 2px solid white;
+  background-color: transparent;
+  font-weight: 300;
+}
+button:hover {
+  background-color: white;
+}
+
+/* Buttons on each project page for website links and code */
+.viewing {
+  border: rgb(224, 223, 223);
+}
+
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -104,128 +157,177 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/***** HEADER *****/
-header {
-  background: url("../img/sparkle-background.jpg");
-  background-size: 185%;
-  background-repeat: no-repeat;
-  background-color: #ffe7e3;
-  width: 100%;  
-}
-header h1 {
-  font-family: 'Dancing Script', cursive;
-  font-weight: 400;
-  font-size: 7rem;
-  color: #8b5b6e;
-  text-align: center;
-}
-/***** WORK *****/
-#work-container {
+
+/* Hero Container */
+.hero-container {
+  background-image: url("../img/computer.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
   align-items: center;
+  justify-content: flex-start;
+  flex-flow: column wrap;
+  height: 700px; /* figure out how to make height based on screen size */
+}
+.hero-container h3 {
+  margin: 10px 30px;
+  padding: 10px 0 30px 0;
+}
+.title {
+  font-size: 1.5em;
+}
+nav {
+  display: none;
+  list-style-type: none;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin-top: 40%;
+}
+
+/* Languages and Skills */
+.technology-container {
+  margin: 60px 30px;
+}
+.tech-stack {
+  margin-top: 60px;
+}
+.technology-container h3 {
+  font-size: 2em;
+}
+.tech-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(134, 185, 233);
+  color: white;
+  font-size: 1em;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  margin: 10px 10px;
+}
+
+/*
+* Images for tech stack
+*/
+#vs-code {
+  background-image: url("../img/vscode.png");
+  background-size: cover;
+  background-color: rgb(204, 201, 201);
+}
+#photoshop {
+  background-image: url("../img/photoshop.png");
+  background-size: cover;
+}
+#xd {
+  background-image: url("../img/xd.png");
+  background-size: cover;
+}
+#illustrator {
+  background-image: url("../img/illustrator.png");
+  background-size: cover;
+}
+#indesign {
+  background-image: url("../img/indesign.png");
+  background-size: cover;
+}
+#constant-contact {
+  background-image: url();
+  background-size: cover;
+}
+
+/* About Me */
+.about {
+  background-color:rgb(224, 223, 223);
+  padding: 1px 1px 40px 1px;
+}
+.about p {
+  margin: 30px 40px;
+}
+.about h3 {
+  font-size: 2em;
+  margin-top: 40px;
+}
+
+/* My Work */
+.work h3 {
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+.work-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: row wrap;
   width: 100%;
-}
-#work-container .box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  width: 85%;
-  margin: 20px 0;
-  padding: 0 20px;
-}
-#work-container .box #one {
-  background-color: #7da27e;
-  opacity: 50%;
-}
-#work-container .box #one:hover {
-  opacity: 100%;
-}
-#work-container .box #two {
-  background-color: #8b5b6e;
-  opacity: 50%;
-}
-#work-container .box #two:hover {
-  opacity: 100%;
-}
-#work-container .box #three {
-  background-color: #95a7b6;
-  opacity: 50%;
-}
-#work-container .box #three:hover {
-  opacity: 100%;
-}
-#work-container .box a {
-  text-decoration: none;
-}
-#work-container .box h2 {
-  font-family: 'Dancing Script', cursive;
-  font-weight: 600;
-  font-size: 3.5rem;
-  color: white;
-  margin-bottom: 0;
-} 
-#work-container .box p {
-  font-size: 1.5rem;
-  color: white;
-}
-/***** ABOUT *****/
-#about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 85%;
-  background-color: white;
-  margin: 0 auto;
   padding-bottom: 60px;
 }
-#about h1 {
-  font-size: 3.4em;
-}
-#about p {
-  font-size: 1.3em;
-  text-align: left;
-}
-/***** FOOTER *****/
-#contact-container {
-  background-color: #ffe7e3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
+.box {
+  height: 300px;
   width: 100%;
 }
-#contact-container h1 {
-  color: #8b5b6e;
-  padding: 0 40px;
-  font-size: 3.4em;
+#dominion {
+  background-image: url("../img/dominion.png");
+  background-size: cover;
 }
-.button {
-  border: none;
-  font-size: 1.875rem;
-  text-align: center;
-  background-color: #7da27e;
-  opacity: 50%;
-  margin-top: 6%;
-  width: 60%;
+#guess-the-word {
+  background-image: url("../img/guess-the-word.jpg");
+  background-size: cover;
 }
-.button a {
-  text-decoration: none;
-  color: white;
+#github-gallery {
+  background-image: url("../img/github-gallery.png");
+  background-size: cover;
+  background-position: 50% 0%;
 }
-.button:hover {
-  opacity: 100%;
+#we-do {
+  background-image: url("../img/we-do.png");
+  background-size: cover;
 }
-.copyright {
-  margin: 60px 0 20px;
+#unplugged {
+  background-image: url("../img/unplugged.png");
+  background-size: cover;
 }
-.copyright p {
-  font-size: 1em;
-}
+
+/* Contact */
 .contact {
-  display: none;
+  background-color:rgb(224, 223, 223);
+  padding: 1px 1px 40px 1px;
+}
+.contact h3 {
+  font-size: 2em;
+  margin-top: 70px;
+}
+#email {
+  background-image: url("../img/email.png");
+  background-size: cover;
+  background-position: 50%;
+}
+#linkedin {
+  background-image: url("../img/linkedin.png");
+  background-size: cover;
+  background-position: 50%;
+}
+#github {
+  background-image: url("../img/github.png");
+  background-size: cover;
+  background-color: white;
+}
+.credits {
+  padding-top: 30px;
+}
+.footer {
+  font-size: .6em;
+  line-height: .8em;
 }
 /* ==========================================================================
    Helper classes
@@ -315,218 +417,112 @@ header h1 {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 700px) {
-/*===============================================================================
-  * Switches work section to horizontal view of boxes using flex box
-  * Increase font sizes
-  * Overlay effect of work boxes with opacity
-  * Adds icons to footer
-============================================================================== */
-  /***** BASE STYLES *****/
-  .half-width {
-    display: flex;
-    flex-flow: row nowrap;
-  }
-  .third-width {
-    width: 33.3%;
-  }
-  h1 {
-    font-size: 3.7em;
-  }
-  p {
-    font-size: 1.3em;
-  }
-  /***** HEADER *****/
-  header {
-    background-size: 120%;
-    background-position: 40% 0%;
-    margin: 0 auto;
-    background-color: white;
-  }
-  header h1{
-    padding: 0 5%;
-  }
-  /***** WORK *****/
-  #work-container {
-    padding-bottom: 30px;
-  }
-  #work-container .box {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-flow: row nowrap;
-    margin: 0 15px;
-    flex: 1;
-  }
-  #work-container .box h2 {
-    font-size: 2.6rem;
-  }
-  #work-container .box p {
-    font-size: 1.25rem;
-  }
-  #work-container .box #one {
-    opacity: 70%;
-  }
-  #work-container .box #two {
-    opacity: 70%;
-  }
-  #work-container .box #three {
-    opacity: 70%;
-  }
-  /***** FOOTER *****/
-  .buttons {
-    display: none;
-  }
-  .contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: row wrap;
-    width: 80%;
-    margin-top: 30px;
-  }
-  .third-width {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column wrap;
-    width: 33.3%;
-    margin: 0 auto;
-    line-height: 1em;
-  }
-  .third-width img {
-    opacity: 50%;
-    width: 70px;
+@media only screen and (min-width: 550px) {
+  .box {
+    height: 300px;
+    width: 50%;
   }
 }
-
-@media only screen and (min-width: 685px) {
-/*===============================================================================
-  * Switches hero-image to adjust for sizing
-============================================================================== */
-  /***** HEADER *****/
-  header {
-    background-image: url("../img/sparkle-background-tablet.jpg");
-  }
-
-}
-@media only screen and (min-width: 853px) {
-  header {
-    background-size: cover;
-    height: 450px;
-    margin-bottom: 200px;
-  }
-}
-
-@media only screen and (min-width: 977px) {
-/*===============================================================================
+@media only screen and (min-width: 750px) {
+/*
   * Increases font size
-  * Adds margin to work h1 boxes to keep formatting consistent with the start of 
-    the next paragraph
-============================================================================== */
-  /***** BASE STYLES *****/
-  html, body {
-    font-size: 20px;
+  * Adjusts circles size
+  * Horizontal menu navigation
+  *
+*/
+
+/* Base Styles */
+  html {
+    font-size: 1.6em;
   }
-  header h1 {
-    padding: 0 5% 8%;
+/* Navigation */
+.navigation { /* container for full-width */
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+.half-width {
+  display: flex;
+  justify-content: flex-start;
+  width: 35%;
+}
+.half-width2 {
+  display: flex;
+  justify-content: flex-end;
+  width: 65%;
+  margin: 0;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-flow: row wrap;
+}
+nav li {
+  list-style-type: none;
+  padding: 0 15px 0 20px;
+  font-size: .8em;
+}
+.menu {
+  display: none;
+}
+.title {
+  font-size: 1em;
+}
+
+
+/* Hero content */
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin-top: 15%;
+}
+
+/* Languages and Skills */
+  .circle {
+    height: 110px;
+    width: 110px;
+    margin: 20px;
   }
-  header {
-    height: 700px;
-    margin-bottom: 300px;
+  .box {
+    height: 250px;
+    width: 33.3%;
   }
-  /***** WORK *****/
-  #work-container .box h2 {
-    font-size: 1.7em;
+  .tech-list p {
+    font-size: .7em;
   }
-  #work-container .box p {
-    font-size: .9em;
+  
+/* JS code */
+  .project-overview h2 {
+    font-size: 18px;
   }
-  #work-container .box #one h2 {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  #work-container .box #three h2 {
-    margin-left: 60px;
-    margin-right: 60px;
-  }
-  /***** ABOUT *****/
-  #about h1 {
-    font-size: 4em;
-  }
-  /***** FOOTER *****/
-  #contact-container h1 {
-    font-size: 4em;
+  .project-overview p {
+    font-size: 14px;
   }
 }
 
-@media only screen and (min-width: 1100px) {
-/*===============================================================================
-  * Switches hero-image to new image to re-adjust sizing
-  * Increase font sizes
-  * Defines width of work boxes to keep consistant
-============================================================================== */
-  /***** HEADER *****/
-  header {
-    background-image: url("../img/sparkle-background-desktop.jpg");
+@media only screen and (min-width: 1200px) {
+  .box {
+    height: 350px;
   }
-  /***** WORK *****/
-  #work-container .box {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    flex-flow: row nowrap;
-    width: 750px;
+  .about p {
+    margin-left: 100px;
+    margin-right: 100px;
   }
-  #work-container .box h2 {
-    font-size: 2em;
+  nav li {
+    padding: 0 30px 0 20px;
   }
-  #work-container .box p {
-    font-size: 1em;
+  /* JS code */
+  .project-overview h2 {
+    font-size: 25px;
+  }
+  .project-overview p {
+    font-size: 18px;
   }
 }
 
-@media only screen and (min-width: 1350px) {
-/*===============================================================================
-  * Increases font sizes
-  * Adjusts work container width for fluid responsive design
-============================================================================== */
-  /***** HEADER *****/
-  header h1 {
-      font-size: 8em;
-  }
-  /***** WORK *****/
-  #work-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    width: 90%;
-  }
-}
-
-@media only screen and (min-width: 1630px) {
-/*===============================================================================
-  * Adjusts work container width for fluid responsive design
-============================================================================== */
-  /***** WORK *****/
-  #work-container {
-    width: 80%;
-  }
-}
-
-@media only screen and (min-width: 1782px) {
-/*===============================================================================
-  * Increases font-sizes
-============================================================================== */
-  /***** WORK *****/
-  #work-container .box h2 {
-    font-size: 2.7em;
-  }
-  #work-container .box p {
-    font-size: 1.5em;
-  }
-}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
