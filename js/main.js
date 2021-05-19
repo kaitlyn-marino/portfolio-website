@@ -6,6 +6,8 @@ const githubGallery = document.querySelector("#github-gallery");
 const weDo = document.querySelector("#we-do");
 const unplugged = document.querySelector("#unplugged");
 const projects = document.querySelector("#work");
+const menu = document.querySelector(".menu");
+const nav = document.querySelector("nav")
 
 
 //Hero Button that takes you to the developer skills sections
@@ -26,6 +28,14 @@ dominionNational.addEventListener("mouseleave", function () {
     dominionNational.classList.remove("color-darker");
     dominionNational.classList.remove("project-overview");
     dominionNational.innerHTML = "";
+});
+dominionNational.addEventListener("touch", function () {
+    dominionNational.classList.add("color-darker");
+    dominionNational.classList.add("project-overview");
+    dominionNational.innerHTML = `<h2><strong>Dominion National</strong></h2>
+                                <p><strong>Tools Used: </strong>HTML, CSS, Responsive Design, Flexbox</p>
+                                <p><strong>My Role: </strong>Designed mock-ups, coded HTML, styllized CSS, added JavaScript for enhanced user experience</p>
+                                <p>>>> See More</p>`;
 });
 
 //Click through to Dominion Details page
@@ -114,5 +124,11 @@ unplugged.addEventListener("mouseleave", function () {
 //Click through to Unplugged Details page
 unplugged.addEventListener("click", function () {
     document.location.href = "unplugged/index.html";
+});
+
+//Mobile Menu navigation display
+menu.addEventListener("click", function () {
+    nav.classList.add("nav-mobile");
+    menu.innerHTML = "";
 });
 

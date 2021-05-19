@@ -69,6 +69,10 @@ ul {
 .project-overview p {
   font-size: 16px;
 }
+.nav-mobile {
+  display: flex;
+  flex-flow: column wrap;
+}
 
 /* Universal Buttons */
 button {
@@ -185,7 +189,7 @@ nav {
   align-items: center;
   justify-content: center;
   flex-flow: column wrap;
-  margin-top: 40%;
+  margin-top: 20%;
 }
 
 /* Languages and Skills */
