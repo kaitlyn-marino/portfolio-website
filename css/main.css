@@ -41,7 +41,7 @@ p {
 }
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 /* Universal Lists */
@@ -72,6 +72,15 @@ ul {
 .nav-mobile {
   display: flex;
   flex-flow: column wrap;
+  margin-top: 15px;
+}
+.image-guess-after {
+  background-image: url("../img/image-guess-after.png");
+  background-size: cover;
+}
+.image-github-after {
+  background-image: url("../img/image-github-after.png");
+  background-size: cover;
 }
 
 /* Universal Buttons */
@@ -171,11 +180,17 @@ textarea {
   align-items: center;
   justify-content: flex-start;
   flex-flow: column wrap;
-  height: 700px; /* figure out how to make height based on screen size */
+  height: 700px;
 }
 .hero-container h3 {
   margin: 10px 30px;
   padding: 10px 0 30px 0;
+}
+.half-width {
+  padding-top: 20px;
+}
+.menu {
+  line-height: 2em;
 }
 .title {
   font-size: 1.5em;
@@ -183,13 +198,17 @@ textarea {
 nav {
   display: none;
   list-style-type: none;
+  line-height: 2em;
 }
 .hero-content {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column wrap;
-  margin-top: 20%;
+}
+.hero-content h1 {
+  margin: 80px 0 5px 0;
+  padding: 0 0 5px 0;
 }
 
 /* Languages and Skills */
@@ -274,7 +293,6 @@ nav {
   justify-content: flex-start;
   flex-flow: row wrap;
   width: 100%;
-  padding-bottom: 60px;
 }
 .box {
   height: 300px;
@@ -284,12 +302,13 @@ nav {
   background-image: url("../img/dominion.png");
   background-size: cover;
 }
-#guess-the-word {
-  background-image: url("../img/guess-the-word.jpg");
+.image-guess-before {
+  background-image: url("../img/image-guess-before.png");
   background-size: cover;
+  background-position: 50% 0%;
 }
-#github-gallery {
-  background-image: url("../img/github-gallery.png");
+.image-github-before {
+  background-image: url("../img/image-github-before.png");
   background-size: cover;
   background-position: 50% 0%;
 }
@@ -306,6 +325,10 @@ nav {
 .contact {
   background-color:rgb(224, 223, 223);
   padding: 1px 1px 40px 1px;
+}
+.contact .circle {
+  height: 70px;
+  width: 70px;
 }
 .contact h3 {
   font-size: 2em;
@@ -455,6 +478,7 @@ nav {
   justify-content: flex-end;
   width: 65%;
   margin: 0;
+  padding-top: 20px;
 }
 nav {
   display: flex;
@@ -474,14 +498,13 @@ nav li {
   font-size: 1em;
 }
 
-
 /* Hero content */
 .hero-content {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column wrap;
-  margin-top: 15%;
+  margin-top: 5%;
 }
 
 /* Languages and Skills */
@@ -497,7 +520,13 @@ nav li {
   .tech-list p {
     font-size: .7em;
   }
-  
+
+/* Contact */
+  .contact .circle {
+    height: 90px;
+    width: 90px;
+  }
+
 /* JS code */
   .project-overview h2 {
     font-size: 18px;
@@ -518,7 +547,8 @@ nav li {
   nav li {
     padding: 0 30px 0 20px;
   }
-  /* JS code */
+
+/* JS code */
   .project-overview h2 {
     font-size: 25px;
   }

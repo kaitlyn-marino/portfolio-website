@@ -1,47 +1,5 @@
+/* Banner image */
 .hero-container {
-  height: 300px;
   background-image: url("../img/banner.png");
   background-size: cover;
-}
-.hero-container p {
-  color: white;
-  margin: 0 0;
-  padding: 0;
-}
-
-.about p {
-  text-align: left;
-}
-.work {
-padding-bottom: 60px;
-}
-.work button {
-  border: 2px solid rgb(224, 223, 223);
-  width: 250px;
-  margin: 10px 20px;
-}
-.work button:hover {
-  background-color:rgb(224, 223, 223);
-}
-.work img {
-  width: 55%;
-  padding: 20px 0;
-}
-h1 {
-  color: white;
-  padding-top: 70px;
-  margin-bottom: 10px;
-  font-size: 2.6em;
-  font-weight: 400;
-}
-h3 {
-font-weight: 300;
-}
-@media only screen and (min-width: 1200px) {
-  .hero-container {
-    height: 400px;
-  }
-  h1 {
-    padding-top: 110px;
-  }
 }

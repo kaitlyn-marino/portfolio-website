@@ -8,14 +8,42 @@ const unplugged = document.querySelector("#unplugged");
 const projects = document.querySelector("#work");
 const menu = document.querySelector(".menu");
 const nav = document.querySelector("nav")
+const skills = document.querySelector(".skills-nav");
+const about = document.querySelector(".about-nav");
+const work = document.querySelector(".work-nav");
+const contact = document.querySelector(".contact-nav");
 
 
-//Hero Button that takes you to the developer skills sections
+//Hero container: Mobile menu navigation display
+menu.addEventListener("click", function () {
+    nav.classList.add("nav-mobile");
+    menu.innerHTML = "";
+});
+
+//Hero container: Mobile menu navigation hide if selection is clicked
+skills.addEventListener("click", function () {
+    nav.classList.remove("nav-mobile");
+    menu.innerHTML = "Menu";
+});
+about.addEventListener("click", function () {
+    nav.classList.remove("nav-mobile");
+    menu.innerHTML = "Menu";
+});
+work.addEventListener("click", function () {
+    nav.classList.remove("nav-mobile");
+    menu.innerHTML = "Menu";
+});
+contact.addEventListener("click", function () {
+    nav.classList.remove("nav-mobile");
+    menu.innerHTML = "Menu";
+});
+
+//Hero container: Hero Button that takes you to the developer skills sections
 heroButton.addEventListener("click", function (){
     developerSkills.scrollIntoView();
 });
 
-//First click to flip Dominon project to description overview 
+//My projects: First mouseover to project description overview 
 dominionNational.addEventListener("mouseenter", function () {
         dominionNational.classList.add("color-darker");
         dominionNational.classList.add("project-overview");
@@ -29,22 +57,9 @@ dominionNational.addEventListener("mouseleave", function () {
     dominionNational.classList.remove("project-overview");
     dominionNational.innerHTML = "";
 });
-dominionNational.addEventListener("touch", function () {
-    dominionNational.classList.add("color-darker");
-    dominionNational.classList.add("project-overview");
-    dominionNational.innerHTML = `<h2><strong>Dominion National</strong></h2>
-                                <p><strong>Tools Used: </strong>HTML, CSS, Responsive Design, Flexbox</p>
-                                <p><strong>My Role: </strong>Designed mock-ups, coded HTML, styllized CSS, added JavaScript for enhanced user experience</p>
-                                <p>>>> See More</p>`;
-});
-
-//Click through to Dominion Details page
-dominionNational.addEventListener("click", function () {
-    document.location.href = "dominion-national/index.html";
-});
-
-//First click to flip Guess the Word project to description overview
 guessTheWord.addEventListener("mouseenter", function () {
+    guessTheWord.classList.remove("image-guess-before");
+    guessTheWord.classList.add("image-guess-after");
     guessTheWord.classList.add("color-darker");
     guessTheWord.classList.add("project-overview");
     guessTheWord.innerHTML = `<h2><strong>Guess the Word Game</strong></h2>
@@ -53,19 +68,15 @@ guessTheWord.addEventListener("mouseenter", function () {
                                   <p>>>> See More</p>`;
 });
 guessTheWord.addEventListener("mouseleave", function () {
+    guessTheWord.classList.add("image-guess-before");
+    guessTheWord.classList.remove("image-guess-after");
     guessTheWord.classList.remove("color-darker");
     guessTheWord.classList.remove("project-overview");
     guessTheWord.innerHTML = "";
 });
-
-//Click through to Guess The Word Game Details page
-guessTheWord.addEventListener("click", function () {
-    document.location.href = "guess-the-word/index.html";
-});
-
-//First click to flip GitHub project to description overview
-
 githubGallery.addEventListener("mouseenter", function () {
+    githubGallery.classList.remove("image-github-before");
+    githubGallery.classList.add("image-github-after");
     githubGallery.classList.add("color-purple");
     githubGallery.classList.add("project-overview");
     githubGallery.innerHTML = `<h2><strong>GitHub Repo Gallery</strong></h2>
@@ -74,18 +85,12 @@ githubGallery.addEventListener("mouseenter", function () {
                                   <p>>>> See More</p>`;
 });
 githubGallery.addEventListener("mouseleave", function () {
+    githubGallery.classList.add("image-github-before");
+    githubGallery.classList.remove("image-github-after");
     githubGallery.classList.remove("color-purple");
     githubGallery.classList.remove("project-overview");
     githubGallery.innerHTML = "";
 });
-
-//Click through to Github Repo Gallery Details page
-githubGallery.addEventListener("click", function () {
-    document.location.href = "github-gallery/index.html";
-});
-
-//First click to flip Wedding project to description overview
-
 weDo.addEventListener("mouseenter", function () {
     weDo.classList.add("color-darker");
     weDo.classList.add("project-overview");
@@ -99,14 +104,6 @@ weDo.addEventListener("mouseleave", function () {
     weDo.classList.remove("project-overview");
     weDo.innerHTML = "";
 });
-
-//Click through to Wedding Details page
-weDo.addEventListener("click", function () {
-    document.location.href = "we-do/index.html";
-});
-
-//First click to flip Unplugged project to description overview
-
 unplugged.addEventListener("mouseenter", function () {
     unplugged.classList.add("color-darker");
     unplugged.classList.add("project-overview");
@@ -121,15 +118,30 @@ unplugged.addEventListener("mouseleave", function () {
     unplugged.innerHTML = "";
 });
 
-//Click through to Unplugged Details page
+//My projects: First touch to project description overview
+dominionNational.addEventListener("touchstart", function () {
+    dominionNational.classList.add("color-darker");
+    dominionNational.classList.add("project-overview");
+    dominionNational.innerHTML = `<h2><strong>Dominion National</strong></h2>
+                                <p><strong>Tools Used: </strong>HTML, CSS, Responsive Design, Flexbox</p>
+                                <p><strong>My Role: </strong>Designed mock-ups, coded HTML, styllized CSS, added JavaScript for enhanced user experience</p>
+                                <p>>>> See More</p>`;
+});
+
+//My projects: Click through to Details page
+dominionNational.addEventListener("click", function () {
+    document.location.href = "dominion-national/index.html";
+});
+guessTheWord.addEventListener("click", function () {
+    document.location.href = "guess-the-word/index.html";
+});
+githubGallery.addEventListener("click", function () {
+    document.location.href = "github-gallery/index.html";
+});
+weDo.addEventListener("click", function () {
+    document.location.href = "we-do/index.html";
+});
 unplugged.addEventListener("click", function () {
     document.location.href = "unplugged/index.html";
 });
-
-//Mobile Menu navigation display
-menu.addEventListener("click", function () {
-    nav.classList.add("nav-mobile");
-    menu.innerHTML = "";
-});
-
 
