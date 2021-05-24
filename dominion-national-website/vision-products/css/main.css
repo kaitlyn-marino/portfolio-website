@@ -1,0 +1,109 @@
+/***** ABOUT *****/
+#about h1 {
+  font-size: 2em;
+  padding-top: 20px;
+}
+#about h2 {
+  font-size: 1.3em;
+  margin: 10px;
+  text-align: center;
+}
+#about p {
+  line-height: 1.4em;
+}
+
+/***** LINKS *****/
+#links {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 10px 40px 10px;
+}
+
+/***** THIRD BOX *****/
+.third-box img {
+  height: 80px;
+}
+
+/***** CALL-OUT *****/
+#call-out {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin: 0 auto;
+  background-color: #009ecc;
+  color: white;
+  text-align: center;
+}
+#call-out .one-third {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0 10px;
+}
+.states {
+  display: flex;
+  flex-flow: column wrap;  
+  justify-content: flex-start;
+  align-items: center;
+}
+.states p {
+  padding: 0 15px;
+  font-weight: normal;
+}
+
+@media only screen and (min-width: 350px) {
+/*
+States in call-out switch flex-flow from column wrap to row wrap
+*/
+  /***** CALL-OUT *****/ 
+  .states {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+@media only screen and (min-width: 754px) {
+  /*
+  Links switch flex-flow from column wrap to row wrap
+  */
+    /***** LINKS *****/ 
+    #links {
+      display: flex;
+      flex-flow: row wrap;
+    }
+  }
+
+@media only screen and (min-width: 768px) {
+/* 
+Adjusts the about section font size
+Adjusts footnote font size
+*/
+  /***** ABOUT *****/ 
+  #about h1 {
+    font-size: 1.8em;
+  }
+  #about h2 {
+    font-size: 1.3em;
+  }
+}
+    
+@media only screen and (min-width: 992px) {
+/* 
+Adjusts about section width and text size
+*/
+  /***** ABOUT *****/ 
+  #about {
+    width: 80%;
+  }
+  #about h1 {
+    font-size: 2em;
+  }
+  #about h2 {
+    font-size: 1.5em;
+  }
+  #about p {
+    font-size: 1.2em;
+  }
+}

@@ -1,0 +1,71 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/***** MISSION *****/
+#mission {
+  background-color: #527158;
+  padding: 50px 0 20px 0;
+}
+#mission h1 {
+  font-size: 1.875em;
+  line-height: 1.1em;
+}
+#mission p {
+  margin: 20px;
+  font-size: .8em;
+}
+/***** CONTACT US *****/
+#contact-us {
+  background-color: #2a423a;
+  padding: 50px 0 40px 0;
+}
+#contact-us h1 {
+  font-size: 1.875em;
+  line-height: 1.1em;
+  margin: 0 20px 10px;
+}
+#contact-us h2 {
+  margin: 10px 20px;
+}
+#contact-us p {
+  margin: 0 20px;
+  font-size: .8em;
+}
+
+@media only screen and (min-width: 700px) {
+  #mission .full-width, #contact-us .full-width {
+    padding: 0 30px;
+    width: 100%;
+  }
+  .half-width {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    width: 50%;
+  }
+  #mission {
+    padding: 50px 90px 50px 30px;
+  }
+  iframe {
+    height: 350px;
+  }
+  #contact-us {
+    padding: 50px 90px 50px 30px;
+  }
+  #contact-us h1 {
+    padding-left: 30px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  #mission p {
+    padding: 30px 60px 10px 50px;
+  }
+  #contact-us {
+    padding: 50px 80px;
+  }
+}

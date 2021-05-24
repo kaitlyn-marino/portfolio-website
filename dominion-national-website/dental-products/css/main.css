@@ -1,0 +1,144 @@
+/***** ABOUT *****/
+#about h1 {
+  font-size: 2em;
+  padding-top: 20px;
+}
+#about h2 {
+  font-size: 1.3em;
+  margin: 10px;
+  text-align: center;
+}
+#about p {
+  line-height: 1.4em;
+}
+
+/***** THIRD BOX *****/
+.third-box img {
+  height: 80px;
+}
+
+/***** FOURTH BOX *****/
+.fourth-box img {
+  width: 110px;
+}
+
+/***** CALL-OUT *****/
+#call-out {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin: 0 auto;
+  background-color: #009ecc;
+  color: white;
+  text-align: center;
+}
+#call-out .one-third {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0 10px;
+}
+.states {
+  display: flex;
+  flex-flow: column wrap;  
+  justify-content: flex-start;
+  align-items: center;
+}
+.states p {
+  padding: 0 15px;
+  font-weight: normal;
+}
+/***** FOOTNOTES *****/
+.footnote {
+  text-align: left;
+}
+
+
+@media only screen and (min-width: 350px) {
+/*
+States in call-out switch flex-flow from column wrap to row wrap
+*/
+  /***** CALL-OUT *****/ 
+  .states {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+@media only screen and (min-width: 752px) {
+/*
+Stacks link boxes 2 x 2
+*/
+  /***** LINKS *****/ 
+  #links {
+    margin: 20px 130px 40px 130px;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+/* 
+Adjusts the about section width
+Adjusts the text size of the footnote
+*/
+  /***** ABOUT *****/ 
+  #about h1 {
+    font-size: 1.8em;
+  }
+  #about h2 {
+    font-size: 1.3em;
+  }
+  .footnote p {
+    font-size: .8em;
+    line-height: 1.6em;
+  }
+}
+    
+@media only screen and (min-width: 992px) {
+/* 
+Adjusts about section width and text size
+Adjusts margin on links to stay stacked 2 X 2 for screen size
+*/
+  /***** ABOUT *****/ 
+  #about {
+    width: 80%;
+  }
+  #about h1 {
+    font-size: 2em;
+  }
+  #about h2 {
+    font-size: 1.5em;
+  }
+  #about p {
+    font-size: 1.2em;
+  }
+  /***** LINKS *****/
+  #links {
+    margin: 20px 250px 40px 250px;
+  }
+}
+
+@media only screen and (min-width: 1198px) {
+/* 
+Adjusts margin on links to stay stacked 2 X 2 for screen size
+*/
+  /***** LINKS *****/
+  #links {
+    margin: 20px 300px 40px 300px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+/*
+Stacks links 2 X 2
+Adjusts size of footnotes
+*/
+  /***** LINKS *****/ 
+  #links {
+    margin: 20px 400px 40px 400px;
+  }
+  .footnote p {
+    font-size: 1em;
+    line-height: 1.8em;
+  }
+}

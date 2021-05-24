@@ -1,0 +1,47 @@
+
+/***** Schedule Page Specific *****/
+#wedding-schedule p {
+  font-size: 2.5em;
+  color: #91A391;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+#wedding-schedule ul {
+  text-align: center;
+  list-style-type: none;
+}
+#wedding-schedule ul li {
+  font-size: 1.5em;
+  line-height: 2.5em;
+  color: #6C6E6C;
+  text-align: center;
+  list-style-type: none;
+  padding-right: 50px;
+}
+#address p {
+  font-size: 1em;
+  margin: 50px;
+}
+
+@media only screen and (min-width: 650px) {
+  #wedding-schedule p {
+    font-size: 3.5em;
+  }
+  #wedding-schedule ul li {
+    font-size: 2.5em;
+    line-height: 2.7em;
+  }
+  #address p {
+    font-size: 1.5em;
+    margin: 70px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  header p {
+    line-height: 1.1em;
+  }
+  .nav-links li {
+    margin: 0 40px 10px 0;
+  }
+}

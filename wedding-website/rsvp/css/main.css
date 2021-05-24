@@ -1,0 +1,65 @@
+/***** RSVP *****/
+#rsvp .page-name {
+  color: #91A391;
+  font-size: 2.5em;
+  line-height: 2.7em;
+}
+#rsvp .form-header {
+  font-size: 1.5em;
+  color: #6C6E6C;
+  margin: 20px 0;
+}
+#family-member-note p {
+  font-size: 1em;
+  margin: 40px 10px;
+}
+input[type=text] {
+  border: 1px solid #6C6E6C;
+  width: 250px;
+  height: 30px;
+  margin: 5px 0 30px 0;
+}
+input[type=submit] {
+  background-color: #FAEDEE;
+  color: #6C6E6C;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4em;
+  margin-bottom: 50px;
+}
+
+
+@media only screen and (min-width: 500px) {
+ #family-member-note p {
+   margin: 40px 40px;
+ }
+}
+
+@media only screen and (min-width: 1080px) {
+  header p {
+    line-height: 1.1em;
+  }
+  .nav-links li {
+    margin: 0 40px 10px 0;
+  }
+  #rsvp .page-name {
+    font-size: 3.5em;
+  }
+  #rsvp .form-header {
+    font-size: 2.5em;
+  }
+  #family-member-note p {
+    font-size: 1.5em;
+    margin: 40px 250px;
+  }
+  input[type=text] {
+    width: 400px;
+    height: 50px;
+    margin: 10px 0 50px 0;
+  }
+  input[type=submit] {
+    font-size: 2em;
+    margin-bottom: 50px;
+  }
+ }

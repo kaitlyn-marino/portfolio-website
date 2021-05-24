@@ -1,0 +1,119 @@
+/***** ABOUT *****/
+#about h1 {
+  font-size: 2em;
+  padding-top: 20px;
+}
+#about p {
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+#links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin: 30px 0 0 10px;
+}
+#links p {
+  font-size: 1.2em;
+}
+#directions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin: 0 auto;
+  width: 80%;
+  padding-right: 10px;
+  margin-bottom: 70px;
+}
+#directions p {
+  font-size: .9em;
+  text-align: center;
+  padding-top: 0;
+  margin-top: 0;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  border: solid #05588c 1px;
+  margin: 20px 20px 20px 0;
+  width: 280px;
+  background-color: white;
+  padding: 0;
+}
+.button p {
+  padding: 0 15px;
+  color: #05588c;
+}
+.button a {
+  text-decoration: none;
+  color: #05588c;
+}
+.button:hover {
+  background-color: #05588c;
+  border: solid #05588c 1px;
+  color: white;
+}
+.button:hover p {
+  color: white;
+}
+
+@media only screen and (min-width: 412px) {
+  #directions {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 655px) {
+  #directions {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+/* 
+Adjusts the about section font size
+Adjusts footnote font size
+*/
+  /***** ABOUT *****/ 
+  #about h1 {
+    font-size: 1.8em;
+  }
+  #directions {
+    width: 40%;
+  }
+}
+    
+@media only screen and (min-width: 992px) {
+/* 
+Adjusts about section width and text size
+*/
+  /***** ABOUT *****/ 
+  #about {
+    width: 80%;
+  }
+  #about h1 {
+    font-size: 2em;
+  }
+  #about p {
+    font-size: 1.3em;
+  }
+  .button {
+    width: 350px;
+  }
+  .button p {
+    font-size: 1.3em;
+  }
+  #directions {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1308px) {
+  #directions {
+    width: 20%;
+  }
+}

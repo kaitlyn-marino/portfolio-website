@@ -48,7 +48,7 @@ dominionNational.addEventListener("mouseenter", function () {
         dominionNational.classList.add("color-darker");
         dominionNational.classList.add("project-overview");
         dominionNational.innerHTML = `<h2><strong>Dominion National</strong></h2>
-                                    <p><strong>Tools Used: </strong>HTML, CSS, Responsive Design, Flexbox</p>
+                                    <p><strong>Tools Used: </strong>HTML, CSS, PHP, Responsive Design, Flexbox</p>
                                     <p><strong>My Role: </strong>Designed mock-ups, coded HTML, styllized CSS, added JavaScript for enhanced user experience</p>
                                     <p>>>> See More</p>`;
 });
@@ -95,7 +95,7 @@ weDo.addEventListener("mouseenter", function () {
     weDo.classList.add("color-darker");
     weDo.classList.add("project-overview");
     weDo.innerHTML = `<h2><strong>We Do</strong></h2>
-                                  <p><strong>Tools Used: </strong>HTML, CSS, JavaScript, Responsive Design, Flexbox</p>
+                                  <p><strong>Tools Used: </strong>HTML, CSS, Responsive Design, Flexbox</p>
                                   <p><strong>My Role: </strong>Built the wedding website from the ground up, incorporating colors and design elements from Save the Dates</p>
                                   <p>>>> See More</p>`;
 });
@@ -118,11 +118,7 @@ unplugged.addEventListener("mouseleave", function () {
     unplugged.innerHTML = "";
 });
 
-<<<<<<< HEAD
 //My projects: First touch to project description overview
-=======
-//Mobile touch to display overview
->>>>>>> 0d3a2ed28e4d3a06e7791f5989bb5db65b0f05cd
 dominionNational.addEventListener("touchstart", function () {
     dominionNational.classList.add("color-darker");
     dominionNational.classList.add("project-overview");
@@ -130,8 +126,6 @@ dominionNational.addEventListener("touchstart", function () {
                                 <p><strong>Tools Used: </strong>HTML, CSS, Responsive Design, Flexbox</p>
                                 <p><strong>My Role: </strong>Designed mock-ups, coded HTML, styllized CSS, added JavaScript for enhanced user experience</p>
                                 <p>>>> See More</p>`;
-<<<<<<< HEAD
-=======
 });
 guessTheWord.addEventListener("touchstart", function () {
     guessTheWord.classList.add("color-darker");
@@ -181,7 +175,6 @@ weDo.addEventListener("click", function () {
 });
 unplugged.addEventListener("click", function () {
     document.location.href = "unplugged/index.html";
->>>>>>> 0d3a2ed28e4d3a06e7791f5989bb5db65b0f05cd
 });
 
 //My projects: Click through to Details page
