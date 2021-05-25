@@ -1,0 +1,73 @@
+.page-name p {
+  color: #91A391;
+  font-size: 2.5em;
+}
+#parties {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin: 0 auto;
+}
+#bridal, #groom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+#bridal h1, #groom h1 {
+  color: #91A391;
+  font-size: 2.5em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+#bridal h2, #groom h2 {
+  color: #91A391;
+  font-size: 1.8em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  margin: 30px 0 0;
+}
+#bridal p, #groom p {
+  font-size: 1.5em;
+}
+img {
+  border-radius: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  #parties {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    width: 90%;
+    padding-right: 20px;
+  }
+  #bridal {
+    width: 45%;
+  }
+  #groom {
+    width: 45%;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  header p {
+    line-height: 1.1em;
+  }
+  .nav-links li {
+    margin: 0 40px 10px 0;
+  }
+  .page-name p {
+    font-size: 3.5em;
+  }
+  .bridal p {
+    font-size: 2.5em;
+  }
+  .bridal p {
+    margin-bottom: 50px;
+  }
+}

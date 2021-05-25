@@ -15,10 +15,11 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="../css/main.css"> <!--Main CSS file-->
-  <link rel="stylesheet" href="../css/project-pages.css"> <!--Project Page CSS file-->
-  <link rel="stylesheet" href="../css/normalize.css"> <!--Main normalize file-->
-  <link rel="stylesheet" href="css/main.css"> <!--Individual CSS file-->
+  <link rel="stylesheet" href="../css/main.css"> 
+  <link rel="stylesheet" href="../css/project-pages.css"> 
+  <link rel="stylesheet" href="../css/normalize.css"> 
+  <link rel="stylesheet" href="css/main.css"> 
+  <link rel="stylesheet" href="../css/highlights.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
@@ -78,8 +79,44 @@
   <div class="work">
     <h3>View the Project</h3>
     <p><img src="img/gallery-arranged.png" alt="Responsive Design" /></p>
-    <a href="https://kaitlyn-marino.github.io/github-repo-gallery/" target="_blank"><button class="viewing">Visit Website</button></a>
-    <a href="https://github.com/kaitlyn-marino/github-repo-gallery" target="_blank"><button class="viewing">Get Code</button></a>
+    <div class="work-buttons">
+      <a href="https://kaitlyn-marino.github.io/github-repo-gallery/" target="_blank"><button class="viewing">Visit Website</button></a>
+      <div class="highlights">
+        <button class="viewing details">Highlights</button>
+      </div>
+      <a href="https://github.com/kaitlyn-marino/github-repo-gallery" target="_blank"><button class="viewing">Get Code</button></a>
+    </div>
+  </div>
+
+  <div class="highlight-details hide"> <!--BEGIN HIGHLIGHT DETAILS SECTION-->
+    <h3>Project Highlights</h3>
+    <div class="two-column">
+        <div class="first-half">
+            <p><b>Full Screen Hero Image:</b> Designed the desktop version of the home page to be a full screen hero image with a navigation menu bar for website simplicity and user experience.</p>
+        </div>
+        <div class="second-half">
+            <img src="./img/full-header.jpg" width="90%" alt="Full Screen Home Page">
+        </div>
+    </div>
+
+    <div class="two-column">
+        <div class="first-half">
+            <p><b>Flexbox Layouts:</b> Implemented layouts using CSS Flexbox to allow for single column layouts on smaller screens and double column layouts on larger screens. Flexbox was also used for content order consistency between column layouts.</p>
+        </div>
+        <div class="second-half">
+            <img src="./img/flex-flow.jpg" width="90%" alt="Flexbox">
+        </div>
+    </div>
+
+    <div class="two-column">
+        <div class="first-half">
+            <p><b>Iframes & Directions:</b> Iframes were used to enhance the user experience and easily show the location of the venue. Google Maps references were added through a directions button to ensure the wedding guests could easily populate directions to the venue.</p>
+        </div>
+        <div class="second-half">
+            <img src="./img/maps.jpg" width="90%" alt="Maps & Directions">
+        </div>
+    </div>
+    
   </div>
 
 
