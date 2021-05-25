@@ -321,6 +321,11 @@ nav {
   background-size: cover;
 }
 
+/* Highlights */
+.highlight-details h3 {
+  font-size: 2em;
+  margin-top: 40px;
+}
 /* Contact */
 .contact {
   background-color:rgb(224, 223, 223);

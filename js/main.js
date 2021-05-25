@@ -127,6 +127,11 @@ dominionNational.addEventListener("touchstart", function () {
                                 <p><strong>My Role: </strong>Designed mock-ups, coded HTML, styllized CSS, added JavaScript for enhanced user experience</p>
                                 <p>>>> See More</p>`;
 });
+dominionNational.addEventListener("touchend", function () {
+    dominionNational.classList.remove("color-darker");
+    dominionNational.classList.remove("project-overview");
+    dominionNational.innerHTML = "";
+});
 guessTheWord.addEventListener("touchstart", function () {
     guessTheWord.classList.add("color-darker");
     guessTheWord.classList.add("project-overview");
@@ -134,6 +139,13 @@ guessTheWord.addEventListener("touchstart", function () {
                                   <p><strong>Tools Used: </strong>JavaScript, GitHub</p>
                                   <p><strong>My Role: </strong>Created the JavaScipt for a game where players have 8 chances to guess the word and maintained version control trhough GitHub</p>
                                   <p>>>> See More</p>`;
+});
+guessTheWord.addEventListener("touchend", function () {
+    guessTheWord.classList.add("image-guess-before");
+    guessTheWord.classList.remove("image-guess-after");
+    guessTheWord.classList.remove("color-darker");
+    guessTheWord.classList.remove("project-overview");
+    guessTheWord.innerHTML = "";
 });
 githubGallery.addEventListener("touchstart", function () {
     githubGallery.classList.add("color-purple");
@@ -143,6 +155,13 @@ githubGallery.addEventListener("touchstart", function () {
                                   <p><strong>My Role: </strong>Used JavaScript and API's to create a webpage that displays my current repos and latest projects from GitHub</p>
                                   <p>>>> See More</p>`;
 });
+githubGallery.addEventListener("touchend", function () {
+    githubGallery.classList.add("image-github-before");
+    githubGallery.classList.remove("image-github-after");
+    githubGallery.classList.remove("color-purple");
+    githubGallery.classList.remove("project-overview");
+    githubGallery.innerHTML = "";
+});
 weDo.addEventListener("touchstart", function () {
     weDo.classList.add("color-darker");
     weDo.classList.add("project-overview");
@@ -150,6 +169,11 @@ weDo.addEventListener("touchstart", function () {
                                   <p><strong>Tools Used: </strong>HTML, CSS, JavaScript, Responsive Design, Flexbox</p>
                                   <p><strong>My Role: </strong>Built the wedding website from the ground up, incorporating colors and design elements from Save the Dates</p>
                                   <p>>>> See More</p>`;
+});
+weDo.addEventListener("touchend", function () {
+    weDo.classList.remove("color-darker");
+    weDo.classList.remove("project-overview");
+    weDo.innerHTML = "";
 });
 unplugged.addEventListener("touchstart", function () {
     unplugged.classList.add("color-darker");
@@ -159,22 +183,10 @@ unplugged.addEventListener("touchstart", function () {
                                   <p><strong>My Role: </strong>Built the retreat website from PS mock-up files adhering to all feature requirements and requests</p>
                                   <p>>>> See More</p>`;
 });
-
-//Click through to project page
-dominionNational.addEventListener("click", function () {
-    document.location.href = "dominion-national/index.html";
-});
-guessTheWord.addEventListener("click", function () {
-    document.location.href = "guess-the-word/index.html";
-});
-githubGallery.addEventListener("click", function () {
-    document.location.href = "github-gallery/index.html";
-});
-weDo.addEventListener("click", function () {
-    document.location.href = "we-do/index.html";
-});
-unplugged.addEventListener("click", function () {
-    document.location.href = "unplugged/index.html";
+unplugged.addEventListener("touchend", function () {
+    unplugged.classList.remove("color-darker");
+    unplugged.classList.remove("project-overview");
+    unplugged.innerHTML = "";
 });
 
 //My projects: Click through to Details page

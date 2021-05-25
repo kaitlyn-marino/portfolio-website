@@ -1,0 +1,425 @@
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #00558C;
+}
+
+/***** HEADER *****/
+#top-banner {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px 15px;
+  align-items: center;
+}
+.half-width-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: nowrap;
+  width: 50%;
+}
+.half-width-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: nowrap;
+  width: 50%;
+}
+.logo img {
+  width: 180px;
+}
+.search img {
+  height: 25px;
+  padding: 0 15px;
+}
+.line {
+  justify-content: right;
+  width: 30px;
+  height: 2px;
+  margin: 8px 0;
+  background-color: #00558c;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin: 0 auto;
+  padding-right: 20px;
+}
+nav li {
+  list-style-type: none;
+  text-align: center;
+  font-size: 1.3em;
+  margin: 10px 0;
+}
+nav li a {
+  color: #00558C;
+  text-decoration: none;
+}
+.hamburger button {
+  background-color: white;
+  outline: none;
+  border: none;
+}
+.hamburger nav {
+  display: none;
+}
+#hero-container {
+  width: 100%;
+  overflow: hidden;
+}
+img.hero {
+  position: relative;
+  left: 40%;
+  margin-left: -430px;
+  overflow: hidden;
+}
+
+/***** ABOUT *****/
+#about {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}  
+#about h1 {
+  font-size: 1.4em;
+  margin: 20px;
+  text-align: center;
+}
+#about p {
+  font-size: 1.2em;
+  margin: 20px 40px;
+  text-align: center;
+}
+
+/***** LINKS *****/
+#links {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 60px 40px 30px;
+}
+.first-box, .second-box, .third-box, .fourth-box, .fifth-box, .sixth-box {
+  display: flex;
+  justify-content: center;
+  height: 180px;
+  width: 220px;
+  margin: 20px 10px;
+}
+.half-height-first {
+  display: flex;
+  align-items: center;
+  height: 130px;
+}
+.half-height-second {
+  display: flex;
+  align-items: flex-end;
+  height: 50px;
+}
+.half-height-second p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 40px;
+  font-size: 1.3em;
+  width: 220px;
+  margin: 0 auto;
+}
+#links a {
+  display: flex; 
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+/***** FIRST BOX *****/
+.first-box, .second-box, .third-box, .fourth-box, .fifth-box, .sixth-box {
+  border: solid #00558c 2px;
+}
+.first-box img {
+  height: 75px;
+}
+.half-height-second {
+  background-color: #00558c;
+}
+.half-height-second a {
+  text-decoration: none;
+}
+  
+/***** SECOND BOX *****/
+.second-box img {
+  width: 110px;
+}
+/***** THIRD BOX *****/
+.third-box img {
+  height: 70px;
+}
+
+/***** FOURTH BOX *****/
+.fourth-box img {
+  height: 85px;
+}
+
+/***** FIFTH BOX *****/
+.fifth-box img {
+  height: 80px;
+}
+
+/***** SIXTH BOX *****/
+.sixth-box img {
+  width: 110px;
+}
+
+/***** JOIN *****/
+#enroll {
+  background-image: url("../img/enroll.png");
+  background-repeat: no-repeat;
+  background-size: 140%;
+  background-position: 90% 50%;
+  height: 100px;
+  margin: 0 0 20px 0;
+}
+.invisible-ink {
+  display: flex;
+  height: 100px;
+}
+/***** FOOTER *****/
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin: 10px 20px;
+  text-align: center;
+}
+footer p {
+  font-size: .7em;
+  line-height: 2em;
+}
+footer h1 {
+  font-size: .7em;
+  font-weight: bold;
+}
+footer img {
+  width: 150px;
+}
+.goc p {
+  text-align: left;
+  line-height: 1.2em;
+}
+
+@media only screen and (min-width: 350px) {
+/*
+Increases space between search image and nav hamburger
+*/
+  .search img {
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+/* 
+Increases logo size
+Increases search icon and navigation menu size
+Increases text size and line height of drop-down menu navigation
+Switches the background size of the "Enroll Today Image"
+Adjusts the text size and margins of the footer
+Adjusts the about section width and top margin of header text
+*/
+  /***** HEADER *****/ 
+  .top-banner {
+    margin: 10px 15px;
+  }
+  .logo img {
+    width: 250px;
+  }
+  .search img {
+    height: 40px;
+  }
+  .line {
+    width: 45px;
+    height: 3px;
+    margin: 12px 10px;
+  }
+  /***** ABOUT *****/ 
+  #about {
+    width: 90%;
+  }
+  #about h1 {
+    font-size: 1.55em;
+  }
+  /***** ENROLL *****/
+  #enroll {
+    background-size: cover;
+    background-position: 90% 50%;
+    height: 150px;
+  }
+  /***** FOOTER *****/
+  footer p {
+    font-size: 1em;
+    line-height: 1.7em;
+    margin: 10px 100px;
+  }
+  footer h1 {
+    font-size: 1em;
+  }
+  footer img {
+    width: 250px;
+  }
+  .goc p {
+    font-size: .8em;
+    line-height: 1.6em;
+    margin: 10px;
+  }
+}
+    
+@media only screen and (min-width: 792px) {
+/* 
+Increases font size and line height of drop down menu navigation
+Adjusts about section width and text size
+Adjusts margin on links to stay stacked 3 X 3 for screen size
+*/
+  
+  
+  /***** ABOUT *****/ 
+  #about {
+    width: 80%;
+  }
+  #about h1 {
+    font-size: 1.7em;
+  }
+  #about p {
+    font-size: 1.3em;
+  }
+  /***** LINKS *****/
+  #links {
+    margin: 20px 160px 40px 130px;
+  }
+}
+
+@media only screen and (min-width: 1085px) {
+/* 
+Adjusts about section width
+*/
+  /***** HEADER *****/
+  .hamburger button {
+    display: none;
+  }
+  .half-width-left {
+    width: 20%;
+  }
+  .half-width-right {
+    width: 80%;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+  nav {
+    display: flex !important;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    font-size: .9em;
+    padding: 10px;
+  }
+  #hero-container {
+    width: 100%;
+    height: fit-content;
+  }
+  img.hero {
+    position: relative;
+    left: 0%;
+    margin-left: 0;
+    overflow: visible;
+    height: auto;
+    width: 100%;
+  }
+  /***** ABOUT *****/ 
+  #about {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+/* 
+Adds navigation menu items horizontally in place of navigation menu bar
+Search icon displays last in line
+Width of containers in "top-banner" are adjusted to fit nav menu itemsAdjusts about section width
+Fixes margin of footer paragaph for screen size 
+Adjusts margin on links to stay stacked 3 X 3 for screen size
+*/
+  /***** HEADER *****/
+
+  /***** ABOUT *****/ 
+  #about {
+    width: 65%;
+  }
+  /***** FOOTER *****/
+  footer p {
+    margin: 30px 150px;
+  }
+  /***** LINKS *****/
+  #links {
+    margin: 20px 255px 40px 225px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+/* 
+Adjusts spacing in nav menu bar
+Adjusts size of links
+Adjusts margins of links to stay stacked 3 x 3
+*/
+  /***** HEADER ****/
+  nav ul li {
+    font-size: .9em;
+    padding: 14px;
+  }
+  /***** LINKS *****/
+  .first-box, .second-box, .third-box, .fourth-box, .fifth-box, .sixth-box {
+    height: 204px;
+    width: 250px;
+  }
+  .half-height-first {
+    height: 140px;
+  }
+  .half-height-second {
+    height: 64px;
+  }
+  .half-height-second p {
+    height: 64px;
+    font-size: 1.5em;
+    width: 250px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+/*
+Adjusts about section width
+Adjusts footer text size to fit better with screen size
+*/
+  /***** ABOUT *****/ 
+  #about {
+    width: 60%;
+  }
+  /***** FOOTER *****/
+  footer p {
+    font-size: 1.3em;
+    line-height: 2em;
+  }
+  footer h1 {
+    font-size: 1.3em;
+  }
+  .goc p {
+    font-size: 1em;
+    line-height: 1.8em;
+  }
+}

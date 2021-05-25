@@ -57,6 +57,15 @@ padding-bottom: 60px;
   padding: 20px 0;
 }
 
+/* Project Highlights */
+.work-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 0 auto;
+}
+
 @media only screen and (min-width: 750px) {
   .work img {
     width: 60%;
