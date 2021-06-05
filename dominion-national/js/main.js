@@ -1,5 +1,8 @@
 const highlightsButton = document.querySelector(".details");
 const highlights = document.querySelector(".highlight-details");
+const ogWebsiteButton = document.querySelector(".original");
+const getCodeButton = document.querySelector(".get-code");
+const newWebsiteButton = document.querySelector(".new-website");
 
 
 // Pops out highlights section
@@ -27,7 +30,18 @@ const seeHighlights = function () {
     });
 };
 
+//Click to original website button 
+ogWebsiteButton.addEventListener("click", function () {
+    window.open(`https://www.dominionnational.com/`, `_blank`);
+    
+});
 
+//Click to new website button 
+newWebsiteButton.addEventListener("click", function () {
+    window.open(`http://codingbykaitlyn.com/dominion-national-website/`, `_blank`);
+});
 
-
-
+//Click to get code button 
+getCodeButton.addEventListener("click", function () {
+    window.open(`https://github.com/kaitlyn-marino/dominion-national`, `_blank`);
+});

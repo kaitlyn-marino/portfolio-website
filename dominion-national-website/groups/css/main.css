@@ -8,21 +8,21 @@ a {
 }
 
 /***** ABOUT *****/
-#about {
+.about {
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
 }  
-#about h1 {
+.about h1 {
   font-size: 1.8em;
   margin: 20px;
   color: #00558c;
   text-align: center;
   padding-top: 20px;
 }
-#about h2 {
+.about h2 {
   font-size: 1.2em;
   margin: 0 30px 10px;
   color: #00558c;
@@ -98,7 +98,7 @@ a {
   width: 100%;
   padding-top: 20px;
 }
-#call-out {
+.call-out {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,7 +109,7 @@ a {
   margin-top: 30px;
   width: 90%;
 }
-#call-out h3 {
+.call-out h3 {
   background-color: #009ecc;
   margin: 0;
   width: 100%;
@@ -134,13 +134,13 @@ Adjusts widths of main-content
 */
  
   /***** ABOUT *****/ 
-  #about {
+  .about {
     width: 90%;
   }
-  #about h1 {
+  .about h1 {
     font-size: 1.8em;
   }
-  #about h2 {
+  .about h2 {
     font-size: 1.3em;
   }
   /***** BLOCK *****/ 
@@ -155,16 +155,16 @@ Adjusts widths of main-content
 Adjusts about section width and text size
 */
   /***** ABOUT *****/ 
-  #about {
+  .about {
     width: 80%;
   }
-  #about h1 {
+  .about h1 {
     font-size: 2em;
   }
-  #about h2 {
+  .about h2 {
     font-size: 1.5em;
   }
-  #call-out h3 {
+  .call-out h3 {
     height: 70px;
     line-height: 70px;
   }
@@ -179,7 +179,7 @@ Adjusts about section width and text size
 Adjusts about section width
 */
   /***** BLOCKS *****/
-  #blocks {
+  .blocks {
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
@@ -214,7 +214,7 @@ Adjusts about section width
     width: 100%;
     margin: 0 auto;
   }
-  #call-out {
+  .call-out {
     width: 75%;
   }
 }

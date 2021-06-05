@@ -1,19 +1,19 @@
 /***** ABOUT *****/
-#about h1 {
+.about h1 {
   font-size: 2em;
   padding-top: 20px;
 }
-#about h2 {
+.about h2 {
   font-size: 1.3em;
   margin: 10px;
   text-align: center;
 }
-#about p {
+.about p {
   line-height: 1.4em;
 }
 
 /***** LINKS *****/
-#links {
+.links {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -27,7 +27,7 @@
 }
 
 /***** CALL-OUT *****/
-#call-out {
+.call-out {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,7 +37,7 @@
   color: white;
   text-align: center;
 }
-#call-out .one-third {
+.call-out .one-third {
   font-size: 1.5em;
   font-weight: bold;
   margin: 0 10px;
@@ -69,7 +69,7 @@ States in call-out switch flex-flow from column wrap to row wrap
   Links switch flex-flow from column wrap to row wrap
   */
     /***** LINKS *****/ 
-    #links {
+    .links {
       display: flex;
       flex-flow: row wrap;
     }
@@ -81,10 +81,10 @@ Adjusts the about section font size
 Adjusts footnote font size
 */
   /***** ABOUT *****/ 
-  #about h1 {
+  .about h1 {
     font-size: 1.8em;
   }
-  #about h2 {
+  .about h2 {
     font-size: 1.3em;
   }
 }
@@ -94,16 +94,16 @@ Adjusts footnote font size
 Adjusts about section width and text size
 */
   /***** ABOUT *****/ 
-  #about {
+  .about {
     width: 80%;
   }
-  #about h1 {
+  .about h1 {
     font-size: 2em;
   }
-  #about h2 {
+  .about h2 {
     font-size: 1.5em;
   }
-  #about p {
+  .about p {
     font-size: 1.2em;
   }
 }

@@ -1,15 +1,15 @@
 /***** RSVP *****/
-#rsvp .page-name {
+.rsvp .page-name {
   color: #91A391;
   font-size: 2.5em;
   line-height: 2.7em;
 }
-#rsvp .form-header {
+.rsvp .form-header {
   font-size: 1.5em;
   color: #6C6E6C;
   margin: 20px 0;
 }
-#family-member-note p {
+.family-member-note p {
   font-size: 1em;
   margin: 40px 10px;
 }
@@ -31,7 +31,7 @@ input[type=submit] {
 
 
 @media only screen and (min-width: 500px) {
- #family-member-note p {
+ .family-member-note p {
    margin: 40px 40px;
  }
 }
@@ -43,13 +43,13 @@ input[type=submit] {
   .nav-links li {
     margin: 0 40px 10px 0;
   }
-  #rsvp .page-name {
+  .rsvp .page-name {
     font-size: 3.5em;
   }
-  #rsvp .form-header {
+  .rsvp .form-header {
     font-size: 2.5em;
   }
-  #family-member-note p {
+  .family-member-note p {
     font-size: 1.5em;
     margin: 40px 250px;
   }

@@ -133,8 +133,6 @@ dominionNational.addEventListener("touchend", function () {
     dominionNational.innerHTML = "";
 });
 guessTheWord.addEventListener("touchstart", function () {
-    guessTheWord.classList.remove("image-guess-before");
-    guessTheWord.classList.add("image-guess-after");
     guessTheWord.classList.add("color-darker");
     guessTheWord.classList.add("project-overview");
     guessTheWord.innerHTML = `<h2><strong>Guess the Word Game</strong></h2>
@@ -150,8 +148,6 @@ guessTheWord.addEventListener("touchend", function () {
     guessTheWord.innerHTML = "";
 });
 githubGallery.addEventListener("touchstart", function () {
-    githubGallery.classList.remove("image-github-before");
-    githubGallery.classList.add("image-github-after");
     githubGallery.classList.add("color-purple");
     githubGallery.classList.add("project-overview");
     githubGallery.innerHTML = `<h2><strong>GitHub Repo Gallery</strong></h2>

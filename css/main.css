@@ -47,6 +47,7 @@ a {
 /* Universal Lists */
 ul {
   list-style-type: none;
+  padding-right: 50px;
 }
 
 /* Codes for JS */
@@ -61,7 +62,6 @@ ul {
 }
 .project-overview {
   color: white;
-  text-shadow: black;
 }
 .project-overview h2 {
   font-size: 20px;
@@ -491,6 +491,12 @@ nav {
   justify-content: flex-end;
   flex-flow: row wrap;
 }
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-flow: row wrap;
+}
 nav li {
   list-style-type: none;
   padding: 0 15px 0 20px;
@@ -501,6 +507,7 @@ nav li {
 }
 .title {
   font-size: 1em;
+  padding-top: 10px;
 }
 
 /* Hero content */
@@ -509,7 +516,14 @@ nav li {
   align-items: center;
   justify-content: center;
   flex-flow: column wrap;
-  margin-top: 5%;
+}
+.hero-content h1 {
+  margin: 0;
+  padding: 0;
+}
+.home-page h1 {
+  margin: 100px 0 5px 0;
+  padding: 0 0 5px 0;
 }
 
 /* Languages and Skills */

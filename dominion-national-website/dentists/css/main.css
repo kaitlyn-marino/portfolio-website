@@ -16,21 +16,21 @@ main {
 }
 
 /***** ABOUT *****/
-#about {
+.about {
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
 }  
-#about h1 {
+.about h1 {
   font-size: 1.6em;
   margin: 20px;
   color: #00558c;
   text-align: center;
   padding-top: 20px;
 }
-#about h2 {
+.about h2 {
   font-size: 1.2em;
   margin: 0 30px 10px;
   color: #00558c;
@@ -108,7 +108,7 @@ main {
 .button:hover p {
   color: white;
 }
-#call-out {
+.call-out {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,7 +119,7 @@ main {
   width: 80%;
   margin-bottom: 60px;
 }
-#call-out h3 {
+.call-out h3 {
   background-color: #82bd01;
   margin: 0;
   width: 100%;
@@ -151,7 +151,7 @@ main {
   main {
     width: 100%;
   }
-  #blocks {
+  .blocks {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,7 +159,7 @@ main {
     margin: 0 auto;
     width: 400px;
   }
-  #call-out {
+  .call-out {
     width: 325px;
   }
 }
@@ -168,10 +168,10 @@ main {
   main {
     width: 100%;
   }
-  #about {
+  .about {
     margin: 0 30px;
   }
-  #blocks {
+  .blocks {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,7 +182,7 @@ main {
   .yellow-line {
     width: 85%;
   }
-  #call-out {
+  .call-out {
     width: 425px;
   }
 }
@@ -195,7 +195,7 @@ Adjusts widths of banner
 Adjusts widths of main-content
 */
 
-  #blocks {
+  .blocks {
     display: flex;
     align-items: stretch;
     justify-content: center;
@@ -228,21 +228,21 @@ Adjusts widths of main-content
    padding-top: 0;
    margin-top: 0;
  }
- #call-out {
+ .call-out {
    width: 80%;
  }
- #call-out h3 {
+ .call-out h3 {
    font-size: 1.8em;
  }
 
   /***** ABOUT *****/ 
-  #about {
+  .about {
     width: 90%;
   }
-  #about h1 {
+  .about h1 {
     font-size: 1.8em;
   }
-  #about h2 {
+  .about h2 {
     font-size: 1.3em;
   }
 }
@@ -251,10 +251,10 @@ Adjusts widths of main-content
 /* 
 Adjusts about section width and text size
 */
-  #about h1 {
+  .about h1 {
     font-size: 2em;
   }
-  #about h2 {
+  .about h2 {
     font-size: 1.5em;
   }
   .image-width {
@@ -270,7 +270,7 @@ Adjusts about section width and text size
 Adjusts about section width
 */
 
-  #about {
+  .about {
     display: flex;
     align-items: center;
     justify-content: center;
