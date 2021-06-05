@@ -1,36 +1,29 @@
 /***** ABOUT *****/
-#about h1 {
+.about h1 {
   font-size: 2em;
   padding-top: 20px;
 }
-#about p {
+.about p {
   font-size: 1.2em;
   line-height: 1.4em;
 }
 
 @media only screen and (min-width: 768px) {
-/* 
-Adjusts the about section font size
-Adjusts footnote font size
-*/
   /***** ABOUT *****/ 
-  #about h1 {
+  .about h1 {
     font-size: 1.8em;
   }
 }
     
 @media only screen and (min-width: 992px) {
-/* 
-Adjusts about section width and text size
-*/
   /***** ABOUT *****/ 
-  #about {
+  .about {
     width: 80%;
   }
-  #about h1 {
+  .about h1 {
     font-size: 2em;
   }
-  #about p {
+  .about p {
     font-size: 1.3em;
   }
 }

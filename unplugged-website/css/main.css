@@ -44,6 +44,9 @@ li {
   font-weight: 800;
   font-size: 1.1em;
 }
+a {
+  color: white;
+}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -210,7 +213,6 @@ form {
   margin: 15px 20px;
   width: 90%;
   height: 45px;
-  color: white;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   border: none;
@@ -663,6 +665,7 @@ footer .circle {
   html {
     font-size: 28px;
   }
+}
 
 
 @media print,
@@ -746,4 +749,3 @@ footer .circle {
     page-break-after: avoid;
   }
 }
-

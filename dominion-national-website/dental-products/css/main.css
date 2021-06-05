@@ -1,14 +1,14 @@
 /***** ABOUT *****/
-#about h1 {
+.about h1 {
   font-size: 2em;
   padding-top: 20px;
 }
-#about h2 {
+.about h2 {
   font-size: 1.3em;
   margin: 10px;
   text-align: center;
 }
-#about p {
+.about p {
   line-height: 1.4em;
 }
 
@@ -23,7 +23,7 @@
 }
 
 /***** CALL-OUT *****/
-#call-out {
+.call-out {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,7 +33,7 @@
   color: white;
   text-align: center;
 }
-#call-out .one-third {
+.call-out .one-third {
   font-size: 1.5em;
   font-weight: bold;
   margin: 0 10px;
@@ -70,7 +70,7 @@ States in call-out switch flex-flow from column wrap to row wrap
 Stacks link boxes 2 x 2
 */
   /***** LINKS *****/ 
-  #links {
+  .links {
     margin: 20px 130px 40px 130px;
   }
 }
@@ -82,10 +82,10 @@ Adjusts the about section width
 Adjusts the text size of the footnote
 */
   /***** ABOUT *****/ 
-  #about h1 {
+  .about h1 {
     font-size: 1.8em;
   }
-  #about h2 {
+  .about h2 {
     font-size: 1.3em;
   }
   .footnote p {
@@ -100,20 +100,20 @@ Adjusts about section width and text size
 Adjusts margin on links to stay stacked 2 X 2 for screen size
 */
   /***** ABOUT *****/ 
-  #about {
+  .about {
     width: 80%;
   }
-  #about h1 {
+  .about h1 {
     font-size: 2em;
   }
-  #about h2 {
+  .about h2 {
     font-size: 1.5em;
   }
-  #about p {
+  .about p {
     font-size: 1.2em;
   }
   /***** LINKS *****/
-  #links {
+  .links {
     margin: 20px 250px 40px 250px;
   }
 }
@@ -123,7 +123,7 @@ Adjusts margin on links to stay stacked 2 X 2 for screen size
 Adjusts margin on links to stay stacked 2 X 2 for screen size
 */
   /***** LINKS *****/
-  #links {
+  .links {
     margin: 20px 300px 40px 300px;
   }
 }
@@ -134,7 +134,7 @@ Stacks links 2 X 2
 Adjusts size of footnotes
 */
   /***** LINKS *****/ 
-  #links {
+  .links {
     margin: 20px 400px 40px 400px;
   }
   .footnote p {

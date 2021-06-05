@@ -2,14 +2,14 @@
   color: #91A391;
   font-size: 2.5em;
 }
-#parties {
+.parties {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column wrap;
   margin: 0 auto;
 }
-#bridal, #groom {
+.bridal, .groom {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,28 +17,32 @@
   margin: 0 auto;
   padding-bottom: 40px;
 }
-#bridal h1, #groom h1 {
+.bridal h1, .groom h1 {
   color: #91A391;
   font-size: 2.5em;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
 }
-#bridal h2, #groom h2 {
+.bridal h2, .groom h2 {
   color: #91A391;
   font-size: 1.8em;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   margin: 30px 0 0;
 }
-#bridal p, #groom p {
+.bridal p, .groom p {
   font-size: 1.5em;
+}
+.bridal img, .groom img {
+  width: 50%;
+  margin-bottom: 60px;
 }
 img {
   border-radius: 50%;
 }
 
 @media only screen and (min-width: 768px) {
-  #parties {
+  .parties {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -47,10 +51,10 @@ img {
     width: 90%;
     padding-right: 20px;
   }
-  #bridal {
+  .bridal {
     width: 45%;
   }
-  #groom {
+  .groom {
     width: 45%;
   }
 }
@@ -63,11 +67,5 @@ img {
   }
   .page-name p {
     font-size: 3.5em;
-  }
-  .bridal p {
-    font-size: 2.5em;
-  }
-  .bridal p {
-    margin-bottom: 50px;
   }
 }

@@ -29,7 +29,7 @@ p {
 }
 a {
   text-decoration: none;
-  color: #6C6E6C;
+  color: white;
 }
 .button {
 /* Do not change margin or else the layout becomes left aligned */
@@ -134,13 +134,14 @@ header .nav-links {
 }
 .hamburger {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: flex-end;
+  flex-flow: column wrap;
   padding: 20px;
 }
 .line {
-  width: 25px;
-  height: 3px;
+  width: 30px;
+  height: 2px;
   margin: 5px;
   background-color: white;
 }
@@ -152,7 +153,7 @@ header .nav-links {
   height: 100%;
   width: 100%;
   margin: 0 auto;
-  padding-right: 40px;
+  padding-right: 20px;
 }
 .hamburger:hover .nav-links {
   display: flex;
@@ -172,17 +173,20 @@ header .nav-links {
   color: #6C6E6C;
   text-decoration: none;
 }
+.hamburger:hover .line {
+  display: none;
+}
 
 /*-------- HOME PAGE --------*/
-  #intro {
+  .intro {
     margin: 20px 20px;
   }
-  #intro p {
+  .intro p {
     font-size: 1.3em;
     margin: 20px 0 40px 0;
   }
   /***** LOCATION *****/
-  #location img {
+  .location img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -190,11 +194,11 @@ header .nav-links {
     width: 70%;
     padding: 0 0 20px 0;
   }
-  #location p {
+  .location p {
     font-size: 1em;
     margin: 30px 20px;
   }
-  #location .venue {
+  .location .venue {
     font-size: 1.6em;
   }
   iframe {
@@ -210,21 +214,21 @@ header .nav-links {
     padding: 10px 0;
   }
  
-  #location .button {
+  .location .button {
     margin-top: 20px;
     padding: 10px 20px;
   }
-  #location .button p {
+  .location .button p {
     font-weight: 600;
     font-size: 1.1em;
     color: #6C6E6C;
     margin: 0 20px;
   }
-  #footer {
+  .footer {
     padding: 40px 10px 20px 10px;
     margin: 0 20px;
   }
-  #footer p {
+  .footer p {
     color: #91A391;
     font-size: 1.4em;
   }
@@ -323,16 +327,16 @@ header .nav-links {
     line-height: 1.5em;
     padding-left: 30px;
   }
-  #location .venue {
+  .location .venue {
     font-size: 1.7em;
   }
-  #location p {
+  .location p {
     font-size: 1.4em;
   }
-  #location .button p {
+  .location .button p {
     font-size: 1.4em;
   }
-  #footer p {
+  .footer p {
     font-size: 1.8em;
   }
 }
@@ -364,17 +368,17 @@ header .nav-links {
       font-size: 2.1vw;
       margin: 0 17px;
     }
-    #intro {
+    .intro {
       margin: 20px 50px;
     }
-    #intro p {
+    .intro p {
       font-size: 1.5em;
       margin: 20px 0 40px 0;
     }
-    #location .venue {
+    .location .venue {
       font-size: 1.5em;
     }
-    #location p {
+    .location p {
       font-size: 1.5em;
     }
     iframe {
@@ -386,12 +390,13 @@ header .nav-links {
       width: 60%;
       overflow: hidden;
     }
-    #location .button p {
+    .location .button p {
       font-size: 1.5em;
     }
-    #footer p {
+    .footer p {
       font-size: 1.8em;
     }
+}
     
   
 @media only screen and (min-width: 1080px) {
@@ -408,7 +413,7 @@ header .nav-links {
     margin: 0 40px 30px 0;
   }
   /*-------- HOME PAGE --------*/
-  #intro {
+  .intro {
     display: flex;
     flex-flow: nowrap;
     align-items: stretch;
@@ -418,7 +423,7 @@ header .nav-links {
     padding: 70px 0;
     height: 275px;
   }
-  #intro p {
+  .intro p {
     display: flex; 
     background-color: #faedee;
     width: 33.3%;
@@ -426,19 +431,19 @@ header .nav-links {
     font-size: 2em;
     margin: 0 10px;
   }
- #location {
+ .location {
    padding: 40px 0;
  }
- #location img {
+ .location img {
    width: 60%;
  }
- #location .venue {
+ .location .venue {
    font-size: 2.1em;
  }
- #location p {
+ .location p {
    font-size: 2em;
  }
- #location .both-buttons {
+ .location .both-buttons {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -447,13 +452,13 @@ header .nav-links {
    width: 60%;
    padding: 60px 0 0 0;
  }
- #location .button {
+ .location .button {
    width: 40%;
  }
- #location .button p {
+ .location .button p {
    font-size: 2em;
  }
- #footer p {
+ .footer p {
    font-size: 2.5em;
  }
 }

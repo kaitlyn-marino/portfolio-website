@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -30,12 +30,12 @@
 
   <main>
 
-    <section id="about">
+    <div class="about">
       <h1>What's In Your Future?</h1>
       <h2>We Have the Products and Services You Need.</h2>
-    </section>
+    </div>
 
-    <section id="blocks">
+    <div class="blocks">
       <div class="block-one">
         <div class="banner">
           <p>Considering Dental and Vision</p>
@@ -92,9 +92,9 @@
           </div>
         </a>
       </div> 
-    </section>
+    </div>
 
-      <section id="call-out">
+      <div class="call-out">
         <h3>Request a Quote Today</h3>
         <div class="button2">
           <a href="tel:877.559.9624" target="_blank">
@@ -108,12 +108,12 @@
             </div>
           </a>
         </div>
-      </section>
+      </div>
     
   </main>
 
   <footer>
-    <p>Privacy and Compliance Resources &#9679 Disclaimer &#9679 Careers &#9679 Dental FAQ &#9679 Contact Us &#9679 Transparency Claim Payment Policies &#9679 Nondiscrimination and Foreign Language Assistance Notice</p>
+    <p>Privacy and Compliance Resources &#9679; Disclaimer &#9679; Careers &#9679; Dental FAQ &#9679; Contact Us &#9679; Transparency Claim Payment Policies &#9679; Nondiscrimination and Foreign Language Assistance Notice</p>
     <p>251 18th Street South, Suite 900, Arlington, VA 22202</p>
     <img src="../img/social-media.png" alt="Social Media Icons" />
     <br>
@@ -121,7 +121,7 @@
     <img src="../img/affiliations.png" alt="Affiliations and Recognition Logos" />
     <br>
     <div class="goc">
-      <p>&#169 2020 Dominion National<br>
+      <p>&#169; 2020 Dominion National<br>
         Dominion National is the brand name for the Dominion group of
         companies. Dental plans are underwritten by Dominion Dental
         Services, Inc. (DDSI). Dominion Dental Services USA, Inc.

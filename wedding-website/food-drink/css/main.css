@@ -1,9 +1,9 @@
 /***** Food and Drink Menu Page Specific *****/
-#menu-buffet-style p {
+.menu-buffet-style p {
   color: #91A391;
   font-size: 2.5em;
 }
-#menu-buffet-style ul {
+.menu-buffet-style ul {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,27 +12,27 @@
   text-align: center;
   padding-bottom: 40px;
 }
-#menu-buffet-style ul li {
+.menu-buffet-style ul li {
   list-style-type: none;
   padding: 10px 45px 10px 0;
 }
-#menu-buffet-style .food-header {
+.menu-buffet-style .food-header {
   color: #91A391;
   font-size: 2em;
 }
-#menu-buffet-style .food-selection {
+.menu-buffet-style .food-selection {
   color: #6C6E6C;
   font-size: 1em;
 }
 
 @media only screen and (min-width: 650px) {
-  #menu-buffet-style p {
+  .menu-buffet-style p {
     font-size: 3.5em;
   }
-  #menu-buffet-style .food-header {
+  .menu-buffet-style .food-header {
     font-size: 2.5em;
   }
-  #menu-buffet-style .food-selection {
+  .menu-buffet-style .food-selection {
     font-size: 1.5em;
   }
 }

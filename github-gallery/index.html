@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -41,10 +41,12 @@
       </div>
       <div class="half-width2">
         <nav>
-          <a href="../index.html#technology-container" style="color: black" class="skills-nav"><li>Skills</li></a>
-          <a href="../index.html#about" style="color: black" class="about-nav"><li>About</li></a>
-          <a href="../index.html#work" style="color: black" class="work-nav"><li>Projects</li></a>
-          <a href="../index.html#contact" style="color: black" class="contact-nav"><li>Contact</li></a>
+          <ul>
+            <li><a href="../index.html#technology-container" class="skills-nav">Skills</a></li>
+            <li><a href="../index.html#about" class="about-nav">About</a></li>
+            <li><a href="../index.html#work" class="work-nav">Projects</a></li>
+            <li><a href="../index.html#contact" class="contact-nav">Contact</a></li>
+          </ul>
         </nav>
       </div>
     </div>
@@ -80,11 +82,11 @@
     <h3>View the Project</h3>
     <p><img src="img/gallery-arranged.png" alt="Responsive Design" /></p>
     <div class="work-buttons">
-      <a href="https://kaitlyn-marino.github.io/github-repo-gallery/" target="_blank"><button class="viewing">Visit Website</button></a>
-      <div class="highlights">
-        <button class="viewing details">Highlights</button>
-      </div>
-      <a href="https://github.com/kaitlyn-marino/github-repo-gallery" target="_blank"><button class="viewing">Get Code</button></a>
+      <button class="viewing new-website">Visit Website</button>
+        <div class="highlights">
+          <button class="viewing details">Highlights</button>
+        </div>
+        <button class="viewing get-code">Get Code</button>
     </div>
   </div>
 
@@ -92,28 +94,28 @@
     <h3>Project Highlights</h3>
     <div class="two-column">
         <div class="first-half">
-            <p><b>Full Screen Hero Image:</b> Designed the desktop version of the home page to be a full screen hero image with a navigation menu bar for website simplicity and user experience.</p>
+            <p><b>Bio Information:</b> Created JavaScript using an API to automatically pull the information from the GitHub profile for the users name, bio, location and number of repos. If the GitHub profile is updated, it will automatically update the website.</p>
         </div>
         <div class="second-half">
-            <img src="./img/full-header.jpg" width="90%" alt="Full Screen Home Page">
+            <img src="./img/bio-info.png" alt="Bio Information">
         </div>
     </div>
 
     <div class="two-column">
         <div class="first-half">
-            <p><b>Flexbox Layouts:</b> Implemented layouts using CSS Flexbox to allow for single column layouts on smaller screens and double column layouts on larger screens. Flexbox was also used for content order consistency between column layouts.</p>
+            <p><b>Search Feature:</b> Created a search box that helps the user easily find a repo. When the user inputs a letter or string of letters into the search, it will only display repos that contain that input.</p>
         </div>
         <div class="second-half">
-            <img src="./img/flex-flow.jpg" width="90%" alt="Flexbox">
+            <img src="./img/search.png" alt="Search Feature">
         </div>
     </div>
 
     <div class="two-column">
         <div class="first-half">
-            <p><b>Iframes & Directions:</b> Iframes were used to enhance the user experience and easily show the location of the venue. Google Maps references were added through a directions button to ensure the wedding guests could easily populate directions to the venue.</p>
+            <p><b>Project Details:</b> Created JavaScript using an API to pull the project name, description, default branch, and any languages used. These details will update when the user commits new changes to the repo on GitHub.</p>
         </div>
         <div class="second-half">
-            <img src="./img/maps.jpg" width="90%" alt="Maps & Directions">
+            <img src="./img/project-info.png" alt="Project Information">
         </div>
     </div>
     

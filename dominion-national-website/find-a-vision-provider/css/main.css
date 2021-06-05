@@ -1,23 +1,23 @@
 /***** ABOUT *****/
-#about h1 {
+.about h1 {
   font-size: 2em;
   padding-top: 20px;
 }
-#about p {
+.about p {
   font-size: 1.2em;
   line-height: 1.4em;
 }
-#links {
+.links {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column wrap;
   margin: 30px 0 0 10px;
 }
-#links p {
+.links p {
   font-size: 1.2em;
 }
-#directions {
+.directions {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +27,7 @@
   padding-right: 10px;
   margin-bottom: 70px;
 }
-#directions p {
+.directions p {
   font-size: .9em;
   text-align: center;
   padding-top: 0;
@@ -62,13 +62,13 @@
 }
 
 @media only screen and (min-width: 412px) {
-  #directions {
+  .directions {
     width: 60%;
   }
 }
 
 @media only screen and (min-width: 655px) {
-  #directions {
+  .directions {
     width: 50%;
   }
 }
@@ -79,10 +79,10 @@ Adjusts the about section font size
 Adjusts footnote font size
 */
   /***** ABOUT *****/ 
-  #about h1 {
+  .about h1 {
     font-size: 1.8em;
   }
-  #directions {
+  .directions {
     width: 40%;
   }
 }
@@ -92,13 +92,13 @@ Adjusts footnote font size
 Adjusts about section width and text size
 */
   /***** ABOUT *****/ 
-  #about {
+  .about {
     width: 80%;
   }
-  #about h1 {
+  .about h1 {
     font-size: 2em;
   }
-  #about p {
+  .about p {
     font-size: 1.3em;
   }
   .button {
@@ -107,13 +107,13 @@ Adjusts about section width and text size
   .button p {
     font-size: 1.3em;
   }
-  #directions {
+  .directions {
     width: 30%;
   }
 }
 
 @media only screen and (min-width: 1308px) {
-  #directions {
+  .directions {
     width: 20%;
   }
 }
