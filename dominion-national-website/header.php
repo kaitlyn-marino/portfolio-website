@@ -32,15 +32,15 @@
       
       <div class="half-width-left"> <!--Needs to be set in half width divs to align content correctly-->
         <div class="logo">
-          <a href="index.php"> 
-            <img src="img/logo.png" alt="Dominion National Logo" />
+          <a href="../index.php"> 
+            <img src="../img/logo.png" alt="Dominion National Logo" />
           </a>
         </div>
       </div>
 
       <div class="half-width-right">
         <div class="search">
-          <img src="img/magnify-glass.png" alt="Search Icon" />
+          <img src="../img/magnify-glass.png" alt="Search Icon" />
         </div>
         <nav>
           <div class="mobile-nav">
@@ -51,19 +51,19 @@
             </div>
           </div>
         </nav>
-      </div>
 
-      <div class="mobile-nav-links hide">
-        <ul>
-          <li><a href="../login/index.php">Login</a></li>
-          <li><a href="../about-us/index.php">About Us</a></li>
-          <li><a href="../dental-products/index.php">Dental</a></li>
-          <li><a href="../vision-products/index.php">Vision</a></li>
-          <li><a href="https://dominiondentists.com/dominion" target="_blank">Find a Dentist</a></li>
-          <li><a href="../find-a-vision-provider/index.php">Find a Vision Provider</a></li>
-          <li><a href="../health-facts/index.php">Health Facts</a></li>
-          <li><a href="../news/index.php">News</a></li>
-        </ul>
+        <div class="mobile-nav-links hide">
+          <ul>
+            <li><a href="../login/index.php">Login</a></li>
+            <li><a href="../about-us/index.php">About Us</a></li>
+            <li><a href="../dental-products/index.php">Dental</a></li>
+            <li><a href="../vision-products/index.php">Vision</a></li>
+            <li><a href="https://dominiondentists.com/dominion" target="_blank">Find a Dentist</a></li>
+            <li><a href="../find-a-vision-provider/index.php">Find a Vision Provider</a></li>
+            <li><a href="../health-facts/index.php">Health Facts</a></li>
+            <li><a href="../news/index.php">News</a></li>
+          </ul>
+        </div>
       </div>
       
     </div>

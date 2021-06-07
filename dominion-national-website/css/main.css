@@ -407,7 +407,6 @@ footer img {
       /* 
       Increases logo size
       Increases search icon and navigation menu size
-      Increases text size and line height of drop-down menu navigation
       Switches the background size of the "Enroll Today Image"
       Adjusts the text size and margins of the footer
       Adjusts the about section width and top margin of header text
@@ -461,12 +460,9 @@ footer img {
           
       @media only screen and (min-width: 792px) {
       /* 
-      Increases font size and line height of drop down menu navigation
       Adjusts about section width and text size
       Adjusts margin on links to stay stacked 3 X 3 for screen size
       */
-        
-        
         /***** ABOUT *****/ 
         .about {
           width: 80%;
@@ -485,7 +481,8 @@ footer img {
       
       @media only screen and (min-width: 1085px) {
       /* 
-      Adjusts about section width
+      Changes header to horizontal
+      Adjusts width of about section
       */
         /***** HEADER *****/
         .hamburger {
@@ -501,6 +498,7 @@ footer img {
         }
         .mobile-nav-links {
           display: flex !important;
+          margin: 0;
         }
         .mobile-nav-links ul {
           display: flex;
@@ -529,14 +527,10 @@ footer img {
       
       @media only screen and (min-width: 1200px) {
       /* 
-      Adds navigation menu items horizontally in place of navigation menu bar
-      Search icon displays last in line
-      Width of containers in "top-banner" are adjusted to fit nav menu itemsAdjusts about section width
-      Fixes margin of footer paragaph for screen size 
-      Adjusts margin on links to stay stacked 3 X 3 for screen size
+        About width changes
+        Footer margins changes
+        Links to stay stacked 3X3
       */
-        /***** HEADER *****/
-      
         /***** ABOUT *****/ 
         .about {
           width: 65%;
