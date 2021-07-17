@@ -276,6 +276,7 @@ nav {
 }
 .about p {
   margin: 30px 40px;
+  text-align: left;
 }
 .about h3 {
   font-size: 2em;
